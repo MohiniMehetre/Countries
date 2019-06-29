@@ -129,7 +129,8 @@ extension CountryDetailsViewController: UITableViewDataSource, UITableViewDelega
         }
         cell!.textLabel?.textColor = UIColor.white
         cell!.detailTextLabel?.textColor = UIColor.white
-        
+        cell!.detailTextLabel?.numberOfLines = 0
+
         return cell!
     }
 }
