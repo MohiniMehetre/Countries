@@ -83,6 +83,12 @@ extension CountriesSearchViewController: CountriesViewDisplayable {
     func clearCountryList() {
         self.countries = nil
         self.noRecordsFoundLabel.isHidden = false
+        if (self.searchController?.searchBar.text?.isEmpty)! {
+            self.noRecordsFoundLabel.text = Constants.typeToSearchCountryMessage
+        }
+        else {
+            self.noRecordsFoundLabel.text = Constants.noResultsFoundMessage
+        }
         self.countriesCountLabel.text = String.init(format: Constants.differentCountries, 0)
         self.countriesTableView.reloadData()
     }
@@ -101,13 +107,11 @@ extension CountriesSearchViewController: CountriesViewDisplayable {
         
         if self.countries != nil && (self.countries?.count)! > 0 {
             self.noRecordsFoundLabel.isHidden = true
+            self.countriesTableView.reloadData()
         }
         else if (self.countries?.count == 0 || self.countries == nil)  {
-            self.noRecordsFoundLabel.isHidden = false
-            self.countriesCountLabel.text = String.init(format: Constants.differentCountries, 0)
-            
+            self.clearCountryList()
         }
-        self.countriesTableView.reloadData()
     }
     
     func countryListAPIFailed() {

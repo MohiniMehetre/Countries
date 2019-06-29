@@ -100,8 +100,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Hgt-ny-6qY"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No records found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMp-ST-Quv">
-                                <rect key="frame" x="126.00000000000001" y="324" width="162.33333333333337" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type in the above search box to search for a country." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMp-ST-Quv">
+                                <rect key="frame" x="30" y="312" width="354" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -116,10 +116,12 @@
                             <constraint firstItem="Haf-hZ-BGy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="73e-Tv-D9d"/>
                             <constraint firstItem="ZMp-ST-Quv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Qd-2u-J4Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sb7-O4-DDf" secondAttribute="bottom" constant="15" id="BDF-BA-W8Y"/>
+                            <constraint firstItem="ZMp-ST-Quv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="D8X-12-Qh8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Haf-hZ-BGy" secondAttribute="trailing" id="EXe-4z-HeY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sb7-O4-DDf" secondAttribute="trailing" constant="15" id="JHW-sG-mfg"/>
                             <constraint firstItem="Haf-hZ-BGy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W8U-L7-AAp"/>
                             <constraint firstItem="ych-39-bqc" firstAttribute="top" secondItem="Haf-hZ-BGy" secondAttribute="bottom" constant="16" id="bhH-WY-Aav"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMp-ST-Quv" secondAttribute="trailing" constant="30" id="eTA-1H-RIi"/>
                             <constraint firstItem="ych-39-bqc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ejP-DI-HD4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ych-39-bqc" secondAttribute="trailing" constant="16" id="jYA-0X-V8M"/>
                             <constraint firstItem="sb7-O4-DDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="sQh-Gp-XdJ"/>

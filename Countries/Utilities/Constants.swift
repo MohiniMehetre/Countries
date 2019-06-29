@@ -28,7 +28,9 @@ struct Constants {
     static let alertTitle_Alert = "Alert"
     static let saveSuccessAlertMessage = "Country details saved successfully."
     static let saveFailedAlertMessage = "Failed to save country details. Please try again"
-    
+    static let noResultsFoundMessage = "No results found."
+    static let typeToSearchCountryMessage = "Type in the above search box to search for a country."
+
     //Country
     static let differentCountries = "%d Different countries found"
     static let differentCountry = "%d Country found"
