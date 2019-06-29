@@ -10,12 +10,12 @@
 import Foundation
 
 protocol CountryBusinessLogic: class {
-    
     func searchCountries(name: String)
-    
+    func checkConnectivityAndLoadOfflineEntries()
 }
 
 protocol CountriesViewDisplayable: class, AppDisplayable {
+    func clearCountryList()
     func moveToCountryDetails()
     func refreshCountryList(countries: Countries)
     func countryListAPIFailed()

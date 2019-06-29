@@ -25,12 +25,15 @@ class CountriesDatabaseManager: NSObject {
     class func shared() -> CountriesDatabaseManager {
         return sharedInstance
     }
-
-    func save(countryDetails: CountryInformation) {
+    
+    func save(countryDetails: CountryInformation) -> Bool {
+        
+        //Check whether the country information is already present. If present, delete it.
+        self.deleteCountryIfExists(countryInformation: countryDetails)
         
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
-                return
+                return false
         }
         
         // 1
@@ -43,7 +46,7 @@ class CountriesDatabaseManager: NSObject {
         
         //3
         let countryObj = NSManagedObject(entity: entity,
-                                              insertInto: managedContext)
+                                         insertInto: managedContext)
         
         // 4
         let callingCodesString = countryDetails.callingCodes?.joined(separator: ", ")
@@ -59,7 +62,7 @@ class CountriesDatabaseManager: NSObject {
         let languagesString = languages.joined(separator: ", ")
         
         let timeZonesString = countryDetails.timezones?.joined(separator: ", ")
-
+        
         countryObj.setValue(countryDetails.flag, forKeyPath: "flag")
         countryObj.setValue(countryDetails.name, forKeyPath: "name")
         countryObj.setValue(countryDetails.capital, forKeyPath: "capital")
@@ -73,50 +76,69 @@ class CountriesDatabaseManager: NSObject {
         // 5
         do {
             try managedContext.save()
+            return true
         } catch let error as NSError {
             print("Error while storing country details in core data: \(error.userInfo)")
         }
-    }
-    /*
-    func getLocationCount() -> Int {
-        //1
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        
-        let managedContext = appDelegate!.persistentContainer.viewContext
-        
-        //2
-        let fetchRequest =
-            NSFetchRequest<TTICurrentLocation>(entityName: "TTICurrentLocation")
-        fetchRequest.includesPropertyValues = false
-        
-        //3
-        do {
-            let count = try managedContext.count(for: fetchRequest)
-            return count
-        } catch {
-            print(error.localizedDescription)
-        }
-        return 0
+        return false
     }
     
-    func fetchLocations() -> [TTICurrentLocation] {
+    func fetchCountriesOffline() -> Countries {
         //1
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
         let managedContext = appDelegate!.persistentContainer.viewContext
         
         //2
-        let fetchRequest =
-            NSFetchRequest<TTICurrentLocation>(entityName: "TTICurrentLocation")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Country")
         
         //3
         // Helpers
-        var result = [TTICurrentLocation]()
+        var result = [CountryInformation]()
         
         do {
             // Execute Fetch Request
-            let storeMonitoring = try managedContext.fetch(fetchRequest)
-            result = storeMonitoring
+            let countries = try managedContext.fetch(fetchRequest)
+            
+            for managedObj in countries {
+                
+                let name = managedObj.value(forKey: "name") as! String
+                let callingCodes = (managedObj.value(forKey: "callingCode") as! String).components(separatedBy: ", ")
+                let capital = managedObj.value(forKey: "capital") as! String
+                let region = managedObj.value(forKey: "region") as! String
+                let subRegion = managedObj.value(forKey: "subRegion") as! String
+                let timezones = (managedObj.value(forKey: "timeZone") as! String).components(separatedBy: ", ")
+                
+                let currencyList = (managedObj.value(forKey: "currencies") as! String).components(separatedBy: ", ")
+                var currencies = [Currency]()
+                for currencyObj in currencyList {
+                    let currency = Currency.init(code: "", name: currencyObj, symbol: "")
+                    currencies.append(currency)
+                }
+                
+                let languageList = (managedObj.value(forKey: "languages") as! String).components(separatedBy: ", ")
+                var languages = [Language]()
+                for languageObj in languageList {
+                    let currency = Language.init(iso6391: "", iso6392: "", name: languageObj, nativeName: "")
+                    languages.append(currency)
+                }
+                
+                let flag = managedObj.value(forKey: "flag") as! String
+                
+                
+                
+                let countryInformation = CountryInformation.init(name: name,
+                                                                 callingCodes: callingCodes,
+                                                                 capital: capital,
+                                                                 region: region,
+                                                                 subregion: subRegion,
+                                                                 timezones: timezones,
+                                                                 currencies: currencies,
+                                                                 languages: languages,
+                                                                 flag: flag)
+                
+                result.append(countryInformation)
+            }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -124,7 +146,7 @@ class CountriesDatabaseManager: NSObject {
     }
     
     //Delete values from table
-    func deleteLocations(locations: [TTICurrentLocation]) {
+    func deleteCountryIfExists(countryInformation: CountryInformation) {
         
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
@@ -133,29 +155,20 @@ class CountriesDatabaseManager: NSObject {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "TTICurrentLocation")
-        fetchRequest.includesPropertyValues = false // Only fetch the managedObjectID (not the full object structure)
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Country")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", countryInformation.name!)
         
         var fetchResults: [NSManagedObject] = []
         
         do {
             fetchResults = try managedContext.fetch(fetchRequest)
-        }
-        catch {
-            print("error executing fetch request: \(error)")
-        }
-        
-        do {
             for result in fetchResults {
-                for location in locations {
-                    if (result == location) {
-                        managedContext.delete(location)
-                    }
-                }
+                managedContext.delete(result)
             }
             try managedContext.save()
-        } catch let error as NSError {
-            print("Error while deleting location details from core data: \(error.userInfo)")
         }
-    }*/
+        catch {
+            print("Error while deleting country details from core data.")
+        }
+    }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class CountriesTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var flagImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -17,19 +17,27 @@ class CountriesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
     func setUpCountryCell(country: CountryInformation) {
         
         //Set country name
         self.nameLabel.text = country.name ?? ""
         
         //Load and set flag image asynchronously
-        self.flagImageView.setImageWithUrl(imageUrl: country.flag ?? "")
+        let fileName = NSURL(fileURLWithPath: (country.flag)!).deletingPathExtension?.lastPathComponent
+        let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)
+        
+        if(flagImage != nil) {
+            self.flagImageView.image = flagImage
+        }
+        else {
+            self.flagImageView.setImageWithUrl(imageUrl: country.flag ?? "")
+        }
     }
 }

@@ -19,6 +19,13 @@ class CountryInteractor {
 
 extension CountryInteractor: CountryBusinessLogic {
     
+    func checkConnectivityAndLoadOfflineEntries() {
+        if !(self.viewControllerRef?.isConnectedToInternet())! {
+            let countries = CountriesDatabaseManager.shared().fetchCountriesOffline()
+            self.viewControllerRef?.refreshCountryList(countries: countries)
+        }
+    }
+    
     func searchCountries(name: String) {
         
         //show progress hud

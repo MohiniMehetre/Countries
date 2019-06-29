@@ -26,6 +26,8 @@ struct Constants {
     
     //Alerts and messages
     static let alertTitle_Alert = "Alert"
+    static let saveSuccessAlertMessage = "Country details saved successfully."
+    static let saveFailedAlertMessage = "Failed to save country details. Please try again"
     
     //Country
     static let differentCountries = "%d Different countries found"
@@ -33,5 +35,4 @@ struct Constants {
     
     //Segue Identifiers
     static let countryDetailViewControllerIdentifier = "countryDetailViewController"
-
 } 

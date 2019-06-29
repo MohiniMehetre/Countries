@@ -32,11 +32,11 @@ class CountriesSearchViewController: UIViewController {
         
         //UI related stuff here
         self.searchController = self.addSearchController(tintColor: UIColor.white, textColor: UIColor.white, placeHolderText: "Type country name here...")
-//        self.interactor?.searchCountries(name: "India")
-
         
         self.countriesTableView.rowHeight = UITableView.automaticDimension
         self.countriesTableView.estimatedRowHeight = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad ? 80 : 60
+        
+        self.interactor?.checkConnectivityAndLoadOfflineEntries()
     }
 }
 
@@ -80,6 +80,13 @@ extension CountriesSearchViewController: UISearchResultsUpdating {
 
 extension CountriesSearchViewController: CountriesViewDisplayable {
     
+    func clearCountryList() {
+        self.countries = nil
+        self.noRecordsFoundLabel.isHidden = false
+        self.countriesCountLabel.text = String.init(format: Constants.differentCountries, 0)
+        self.countriesTableView.reloadData()
+    }
+    
     func moveToCountryDetails() {
         
     }
@@ -104,9 +111,6 @@ extension CountriesSearchViewController: CountriesViewDisplayable {
     }
     
     func countryListAPIFailed() {
-        self.countries = nil
-        self.noRecordsFoundLabel.isHidden = false
-        self.countriesCountLabel.text = String.init(format: Constants.differentCountries, 0)
-        self.countriesTableView.reloadData()
+        self.clearCountryList()
     }
 }

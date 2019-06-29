@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 enum CountryItem: Int {
     case name, capital, callingCode, region, subRegion, timeZone, currencies, languages, totalItems
@@ -35,29 +36,53 @@ enum CountryItem: Int {
     }
 }
 
-class CountryDetailsViewController: UIViewController {
-
+class CountryDetailsViewController: UIViewController, AppDisplayable {
+    
     @IBOutlet weak var countryDetailsTableView: UITableView!
     @IBOutlet weak var countryFlagImageView: UIImageView!
-
+    
     var countryInformation: CountryInformation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.initializeView()
+    }
+    
+    // MARK:- Private Methods
+    func initializeView() {
         self.countryDetailsTableView.estimatedRowHeight = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad ? 60 : 50
-
+        
         //Load and set flag image asynchronously
-        self.countryFlagImageView.setImageWithUrl(imageUrl: (countryInformation?.flag) ?? "")
+        let fileName = NSURL(fileURLWithPath: (countryInformation?.flag)!).deletingPathExtension?.lastPathComponent
+        let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)
+        
+        if(flagImage != nil) {
+            self.countryFlagImageView.image = flagImage
+        }
+        else {
+            self.countryFlagImageView.setImageWithUrl(imageUrl: (countryInformation?.flag) ?? "")
+        }
+        
+        //check for internet connection and disable save
+        if (!self.isConnectedToInternet()) {
+            self.navigationItem.rightBarButtonItem = nil
+        }
     }
     
     //MARK:- IBAction methods
     @IBAction func handleSave() {
-        let fileName = NSURL(fileURLWithPath: (self.countryInformation?.flag)!).lastPathComponent!
-        self.countryInformation?.flag = CountriesFileManager.shared().saveFileNamed(fileName: fileName, image: self.countryFlagImageView.image!)
+        let fileName = NSURL(fileURLWithPath: (self.countryInformation?.flag)!).deletingPathExtension?  .lastPathComponent
+        self.countryInformation?.flag = CountriesFileManager.shared().saveFileNamed(fileName: fileName!, image: self.countryFlagImageView.image!)
         
-        CountriesDatabaseManager.shared().save(countryDetails: self.countryInformation!)
+        let status = CountriesDatabaseManager.shared().save(countryDetails: self.countryInformation!)
+        if (status) {
+            self.showMessage(title: Constants.alertTitle_Alert, message: Constants.saveSuccessAlertMessage)
+        }
+        else {
+            self.showMessage(title: Constants.alertTitle_Alert, message: Constants.saveFailedAlertMessage)
+        }
     }
 }
 
@@ -100,7 +125,7 @@ extension CountryDetailsViewController: UITableViewDataSource, UITableViewDelega
             })
             cell!.detailTextLabel?.text = languages?.joined(separator: ", ")
         default:
-            print("Default")
+            print("Default case")
         }
         cell!.textLabel?.textColor = UIColor.white
         cell!.detailTextLabel?.textColor = UIColor.white
