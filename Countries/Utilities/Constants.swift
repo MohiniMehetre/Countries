@@ -12,20 +12,23 @@ struct Constants {
     
     struct API {
         
-        // Server URLs
+        // Server URLs.
         static let url = "https://restcountries.eu/rest/v2" //Production
         
-        // Base URL
+        // Base URL.
         static let baseURL = URL.init(string: url)!
         
-        //All Country related API paths
+        // All Country related API paths.
         struct CountryServices {
+            // API path to fetch countries having specific keyword in their names.
             static let searchCountryAPIPath = "/name/%@"
+            
+            //API path to fetch all countries out there.
             static let allCountriesAPIPath = "/all"
         }
     }
     
-    //Alerts and messages
+    //Alerts and messages.
     static let alertTitle_Alert = "Alert"
     static let saveSuccessAlertMessage = "Country details saved successfully."
     static let saveFailedAlertMessage = "Failed to save country details. Please try again"

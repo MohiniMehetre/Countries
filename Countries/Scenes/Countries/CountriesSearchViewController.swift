@@ -30,7 +30,9 @@ class CountriesSearchViewController: UIViewController {
         self.initializeView()
     }
     
-    // MARK:- Private Methods
+    // MARK:- Private Methods -
+    
+    /// This method sets up the initial values for view when loaded.
     func initializeView() {
         
         //UI related stuff here
@@ -42,6 +44,7 @@ class CountriesSearchViewController: UIViewController {
         self.listenToNetworkUpdates()
     }
     
+    /// This methods updates the label on current view based on country values and reloads table.
     func refreshTableView () {
         
         if (self.searchedCountries != nil) {
@@ -58,9 +61,8 @@ class CountriesSearchViewController: UIViewController {
     }
 }
 
-// MARK: - UITableView Delegate and Datasource
+// MARK: - UITableView Delegate and Datasource -
 extension CountriesSearchViewController: UITableViewDataSource, UITableViewDelegate {
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.searchedCountries != nil && (self.searchedCountries?.count)! > 0{
@@ -84,12 +86,14 @@ extension CountriesSearchViewController: UITableViewDataSource, UITableViewDeleg
     }
 }
 
+// MARK: - UISearchResultsUpdating  -
 extension CountriesSearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         self.handleSearchBarTextChange(searchText: searchController.searchBar.text)
     }
 }
 
+// MARK: - CountriesViewDisplayable  -
 extension CountriesSearchViewController: CountriesViewDisplayable {
     
     func handleSearchBarTextChange(searchText: String?) {

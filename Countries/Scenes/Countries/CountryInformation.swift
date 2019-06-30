@@ -12,8 +12,7 @@
 
 import Foundation
 
-// MARK: - CountryInformationElement
-
+// MARK: - CountryInformation
 struct CountryInformation: Codable {
     let name: String?
     let callingCodes: [String]?

@@ -10,6 +10,7 @@ import UIKit
 
 class CountriesFileManager: NSObject {
     
+    /// Creates shared instance for countries file manager.
     private static var sharedInstance: CountriesFileManager  =  {
         let countriesFileManager = CountriesFileManager()
         return countriesFileManager
@@ -20,11 +21,14 @@ class CountriesFileManager: NSObject {
         super.init()
     }
     
-    // MARK:- Accessor -
+    /// Returns shared instance for countries file manager.
     class func shared() -> CountriesFileManager {
         return sharedInstance
     }
     
+    /// Saves an image with given name into app's documents folder.
+    /// - Parameter fileName: Name of image file in documents folder.
+    /// - Parameter image: Image to be saved.
     func saveFileNamed(fileName: String, image: UIImage) -> String? {
         do {
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -46,6 +50,9 @@ class CountriesFileManager: NSObject {
         return nil
     }
     
+    /// Returns an image with given name from app's documents folder.
+    /// - Parameter fileName: Name of image file in documents folder.
+    /// - Returns: Image with given name from documents folder.
     func getImageFromFileNamed(fileName: String) -> UIImage? {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let filePath = documentsURL.appendingPathComponent("\(fileName).png").path

@@ -11,6 +11,7 @@ import CoreData
 
 class CountriesDatabaseManager: NSObject {
     
+    /// Creates shared instance for database manager.
     private static var sharedInstance: CountriesDatabaseManager  =  {
         let countriesDatabaseManager = CountriesDatabaseManager()
         return countriesDatabaseManager
@@ -21,11 +22,13 @@ class CountriesDatabaseManager: NSObject {
         super.init()
     }
     
-    // MARK:- Accessor
+    /// Returns shared instance for database manager.
     class func shared() -> CountriesDatabaseManager {
         return sharedInstance
     }
     
+    /// Saves country information into local database (Coredata here).
+    /// - Parameter countryDetails: CountryInformation object that contains all information about the specific country.
     func save(countryDetails: CountryInformation) -> Bool {
         
         //Check whether the country information is already present. If present, delete it.
@@ -83,6 +86,8 @@ class CountriesDatabaseManager: NSObject {
         return false
     }
     
+    /// Fetches all saved countries from local database (Coredata here).
+    /// - Returns: An array of CountryInformation objects.
     func fetchCountriesOffline() -> Countries {
         //1
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -145,7 +150,8 @@ class CountriesDatabaseManager: NSObject {
         return result
     }
     
-    //Delete values from table
+    /// Deletes given country from local database (Coredata here).
+    /// - Parameter countryInformation: CountryInformation object that contains all information about the specific country which needs to be deleted.
     func deleteCountryIfExists(countryInformation: CountryInformation) {
         
         guard let appDelegate =

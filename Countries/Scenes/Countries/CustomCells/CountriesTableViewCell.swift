@@ -24,6 +24,8 @@ class CountriesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    /// Sets values to the UITableViewCell for country list
+    /// - Parameter country: CountryInformation object that contains all information about the specific country.
     func setUpCountryCell(country: CountryInformation) {
         
         //Set country name
@@ -37,7 +39,7 @@ class CountriesTableViewCell: UITableViewCell {
             self.flagImageView.image = flagImage
         }
         else {
-            self.flagImageView.setImageWithUrl(imageUrl: country.flag ?? "")
+            self.flagImageView.downloadAndSetImageWithUrl(imageUrl: country.flag ?? "")
         }
     }
 }

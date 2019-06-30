@@ -11,6 +11,12 @@ import MBProgressHUD
 import SVGKit
 
 extension UIViewController {
+    
+    /// Adds searchcontroller for current viewcontroller.
+    /// - Parameter tintColor: Tint color for searchbar.
+    /// - Parameter textColor: Text color for searchbar.
+    /// - Parameter placeHolderText: Place holder to be shown when there is no text in searchbar
+    /// - Returns: Created instance of UISearchController.
     func addSearchController(tintColor: UIColor?, textColor: UIColor?, placeHolderText: String?) -> UISearchController{
         
         //Search controller
@@ -28,6 +34,9 @@ extension UIViewController {
         return search
     }
     
+    /// Shows alert message on current view controller.
+    /// - Parameter title: Title for alert.
+    /// - Parameter message: Message that needs to be shown on alert.
     func showMessage(title: String, message : String)
     {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -42,11 +51,14 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
   
+    /// Shows activity indiator with given message.
+    /// - Parameter progressLabel: Message that needs to be shown on activity indicator.
     func showHUD(progressLabel:String){
         let progressHUD = MBProgressHUD.showAdded(to: self.view, animated: true)
         progressHUD.label.text = progressLabel
     }
     
+    /// Hides currently shown activity indiator.
     func dismissHUD(isAnimated:Bool) {
         DispatchQueue.main.async {
             MBProgressHUD.hide(for: self.view, animated: isAnimated)
@@ -55,7 +67,10 @@ extension UIViewController {
 }
 
 extension UIImageView {
-    func setImageWithUrl(imageUrl: String) {
+    
+    /// Download the image from server url and sets it to current imageview.
+    /// - Parameter imageUrl: Image url coming from server.
+    func downloadAndSetImageWithUrl(imageUrl: String) {
         URLSession.shared.dataTask(with: NSURL(string: imageUrl)! as URL, completionHandler: { (data, response, error) -> Void in
             
             if error != nil {

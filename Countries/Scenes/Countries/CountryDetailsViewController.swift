@@ -50,7 +50,9 @@ class CountryDetailsViewController: UIViewController, AppDisplayable {
         self.initializeView()
     }
     
-    // MARK:- Private Methods
+    // MARK:- Private Methods -
+    
+    /// This method sets up the initial values for view when loaded.
     func initializeView() {
         self.countryDetailsTableView.estimatedRowHeight = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad ? 60 : 50
         
@@ -62,7 +64,7 @@ class CountryDetailsViewController: UIViewController, AppDisplayable {
             self.countryFlagImageView.image = flagImage
         }
         else {
-            self.countryFlagImageView.setImageWithUrl(imageUrl: (countryInformation?.flag) ?? "")
+            self.countryFlagImageView.downloadAndSetImageWithUrl(imageUrl: (countryInformation?.flag) ?? "")
         }
         
         //check for internet connection and disable save
@@ -72,6 +74,7 @@ class CountryDetailsViewController: UIViewController, AppDisplayable {
     }
     
     //MARK:- IBAction methods
+    
     @IBAction func handleSave() {
         let fileName = NSURL(fileURLWithPath: (self.countryInformation?.flag)!).deletingPathExtension?  .lastPathComponent
         self.countryInformation?.flag = CountriesFileManager.shared().saveFileNamed(fileName: fileName!, image: self.countryFlagImageView.image!)
