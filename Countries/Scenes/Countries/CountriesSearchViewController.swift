@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CountriesSearchViewController: UIViewController {
     
@@ -17,8 +18,10 @@ class CountriesSearchViewController: UIViewController {
     @IBOutlet weak var noRecordsFoundLabel: UILabel!
     
     var countries: Countries?
-    
+    var searchedCountries: Countries?
+    var isSearching = false
     var searchController: UISearchController? = nil
+    let reachabilityManager = NetworkReachabilityManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,22 @@ class CountriesSearchViewController: UIViewController {
         self.countriesTableView.rowHeight = UITableView.automaticDimension
         self.countriesTableView.estimatedRowHeight = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad ? 80 : 60
         
-        self.interactor?.checkConnectivityAndLoadOfflineEntries()
+        self.listenToNetworkUpdates()
+    }
+    
+    func refreshTableView () {
+        
+        if (self.searchedCountries != nil) {
+            self.countriesCountLabel.text = self.searchedCountries?.count == 1 ? String.init(format: Constants.differentCountry, (self.searchedCountries?.count)!) : String.init(format: Constants.differentCountries, (self.searchedCountries?.count)!)
+        }
+        
+        if self.searchedCountries != nil && (self.searchedCountries?.count)! > 0 {
+            self.noRecordsFoundLabel.isHidden = true
+            self.countriesTableView.reloadData()
+        }
+        else if (self.searchedCountries?.count == 0 || self.searchedCountries == nil)  {
+            self.clearCountryList()
+        }
     }
 }
 
@@ -45,8 +63,8 @@ extension CountriesSearchViewController: UITableViewDataSource, UITableViewDeleg
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.countries != nil && (self.countries?.count)! > 0{
-            return (self.countries?.count)!
+        if self.searchedCountries != nil && (self.searchedCountries?.count)! > 0{
+            return (self.searchedCountries?.count)!
         }
         return 0
     }
@@ -54,34 +72,69 @@ extension CountriesSearchViewController: UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let countryCell = tableView.dequeueReusableCell(withIdentifier: "countriesCellIdentifier") as! CountriesTableViewCell
-        countryCell.setUpCountryCell(country: self.countries![indexPath.row])
+        countryCell.setUpCountryCell(country: self.searchedCountries![indexPath.row])
         return countryCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let countryDetailsViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.countryDetailViewControllerIdentifier) as! CountryDetailsViewController
-        countryDetailsViewController.countryInformation = self.countries?[indexPath.row]
+        countryDetailsViewController.countryInformation = self.searchedCountries?[indexPath.row]
         self.navigationController?.pushViewController(countryDetailsViewController, animated: true)
     }
 }
 
 extension CountriesSearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else { return }
-        if (text.count > 0) {
-            self.interactor?.searchCountries(name: text)
-        }
-        else {
-            self.countryListAPIFailed()
-        }
+        self.handleSearchBarTextChange(searchText: searchController.searchBar.text)
     }
 }
 
 extension CountriesSearchViewController: CountriesViewDisplayable {
     
+    func handleSearchBarTextChange(searchText: String?) {
+        guard let text = searchText else { return }
+        if (text.count > 0) {
+            self.isSearching = true
+            //Use this when search has to happen through API
+            //  self.interactor?.searchCountries(name: text)
+            
+            //search from local array
+            if (self.countries != nil) {
+                self.searchedCountries = self.interactor?.searchCountry(name: text, from: self.countries!)
+                self.refreshTableView()
+            }
+        }
+        else {
+            self.isSearching = false
+            self.clearCountryList()
+        }
+    }
+    
+    func listenToNetworkUpdates() {
+        reachabilityManager?.startListening()
+        reachabilityManager?.listener = { _ in
+            self.countries?.removeAll()
+            self.searchedCountries?.removeAll()
+            self.interactor?.checkConnectivityAndLoadEntries()
+        }
+    }
+    
+    
+    func searchCountryAPIFailed() {
+        self.clearCountryList()
+    }
+    
     func clearCountryList() {
-        self.countries = nil
+        
+        //show locally saved countries when offline
+        if (!self.isConnectedToInternet() && !self.isSearching) {
+            self.searchedCountries = self.countries
+            self.refreshTableView()
+            return
+        }
+        
+        self.searchedCountries?.removeAll()
         self.noRecordsFoundLabel.isHidden = false
         if (self.searchController?.searchBar.text?.isEmpty)! {
             self.noRecordsFoundLabel.text = Constants.typeToSearchCountryMessage
@@ -93,24 +146,11 @@ extension CountriesSearchViewController: CountriesViewDisplayable {
         self.countriesTableView.reloadData()
     }
     
-    func moveToCountryDetails() {
-        
-    }
-    
     func refreshCountryList(countries: Countries) {
-        
         self.countries = countries
-        
-        if (self.countries != nil) {
-            self.countriesCountLabel.text = self.countries?.count == 1 ? String.init(format: Constants.differentCountry, (self.countries?.count)!) : String.init(format: Constants.differentCountries, (self.countries?.count)!)
-        }
-        
-        if self.countries != nil && (self.countries?.count)! > 0 {
-            self.noRecordsFoundLabel.isHidden = true
-            self.countriesTableView.reloadData()
-        }
-        else if (self.countries?.count == 0 || self.countries == nil)  {
-            self.clearCountryList()
+        self.refreshTableView()
+        if (self.isSearching) {
+            self.handleSearchBarTextChange(searchText: self.searchController?.searchBar.text)
         }
     }
     

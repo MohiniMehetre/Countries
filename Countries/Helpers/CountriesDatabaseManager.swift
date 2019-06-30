@@ -21,7 +21,7 @@ class CountriesDatabaseManager: NSObject {
         super.init()
     }
     
-    // MARK:- Accessor -
+    // MARK:- Accessor
     class func shared() -> CountriesDatabaseManager {
         return sharedInstance
     }

@@ -11,6 +11,7 @@ import Moya
 
 enum CountriesAPI {
     case searchCountries(name: String)
+    case getAllCountries()
 }
 
 extension CountriesAPI : TargetType {
@@ -20,12 +21,12 @@ extension CountriesAPI : TargetType {
     }
     
     var path:String {
-        
         switch self {
-            
         case let .searchCountries(name):
-            let path = String(format: Constants.API.CountryServices.countryListAPIPath, name)
-            return path
+            return String(format: Constants.API.CountryServices.searchCountryAPIPath, name)
+            
+        case .getAllCountries():
+            return String(format: Constants.API.CountryServices.allCountriesAPIPath)
         }
     }
     

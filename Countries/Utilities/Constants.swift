@@ -20,7 +20,8 @@ struct Constants {
         
         //All Country related API paths
         struct CountryServices {
-            static let countryListAPIPath = "/name/%@"
+            static let searchCountryAPIPath = "/name/%@"
+            static let allCountriesAPIPath = "/all"
         }
     }
     
