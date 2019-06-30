@@ -1,5 +1,4 @@
 # Countries
-Mobiliya: Coding Challenge
 
 # The Challenge
 Create a Universal iOS app called ‘Countries’ which will enable user to search countries based on country name and see some details of countries. 
