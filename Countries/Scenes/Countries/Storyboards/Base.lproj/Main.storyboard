@@ -186,7 +186,9 @@
                                     <constraint firstAttribute="trailing" secondItem="dye-Zs-muQ" secondAttribute="trailing" constant="18" id="7Ob-qo-IvT"/>
                                     <constraint firstItem="dye-Zs-muQ" firstAttribute="leading" secondItem="Z47-iX-Paq" secondAttribute="leading" constant="18" id="IVo-RZ-lTX"/>
                                     <constraint firstAttribute="bottom" secondItem="dye-Zs-muQ" secondAttribute="bottom" constant="12" id="Ngh-RL-4ul"/>
-                                    <constraint firstAttribute="height" constant="200" id="nd4-F0-Jxn"/>
+                                    <constraint firstAttribute="height" constant="200" id="nd4-F0-Jxn">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
                                     <constraint firstItem="dye-Zs-muQ" firstAttribute="top" secondItem="Z47-iX-Paq" secondAttribute="top" constant="12" id="ptd-a8-aSs"/>
                                 </constraints>
                             </view>
