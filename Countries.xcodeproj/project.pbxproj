@@ -132,6 +132,63 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		35CAA71E22C8A58300306F61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				35E29A7B22C684D6000A53FE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		35CAA71F22C8A59400306F61 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3541322622C73B7B00477CA0 /* CountryInterfaces.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		35CAA72022C8A5A900306F61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3541322822C73B9000477CA0 /* CountryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		35CAA72122C8A5CA00306F61 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3541322A22C73E0F00477CA0 /* CountryInformation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		35CAA72222C8A61600306F61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3541322F22C76FA000477CA0 /* CountryDetailsViewController.swift */,
+				3541322122C729CC00477CA0 /* CountriesSearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		35CAA72322C8A66200306F61 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				35CAA72422C8A66C00306F61 /* Storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		35CAA72422C8A66C00306F61 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				35E29A8322C684D8000A53FE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		35E29A6B22C684D6000A53FE = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +263,7 @@
 		35E29AAA22C68F57000A53FE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				35E29A8322C684D8000A53FE /* LaunchScreen.storyboard */,
+				35CAA72322C8A66200306F61 /* Launch */,
 				35E29AAB22C68F5E000A53FE /* Countries */,
 			);
 			path = Scenes;
@@ -216,12 +273,11 @@
 			isa = PBXGroup;
 			children = (
 				3541322522C739FD00477CA0 /* CustomCells */,
-				35E29A7B22C684D6000A53FE /* Main.storyboard */,
-				3541322122C729CC00477CA0 /* CountriesSearchViewController.swift */,
-				3541322622C73B7B00477CA0 /* CountryInterfaces.swift */,
-				3541322822C73B9000477CA0 /* CountryInteractor.swift */,
-				3541322A22C73E0F00477CA0 /* CountryInformation.swift */,
-				3541322F22C76FA000477CA0 /* CountryDetailsViewController.swift */,
+				35CAA71E22C8A58300306F61 /* Storyboards */,
+				35CAA71F22C8A59400306F61 /* Protocols */,
+				35CAA72022C8A5A900306F61 /* Interactor */,
+				35CAA72122C8A5CA00306F61 /* Entities */,
+				35CAA72222C8A61600306F61 /* ViewControllers */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
