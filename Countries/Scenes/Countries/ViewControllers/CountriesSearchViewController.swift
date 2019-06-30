@@ -133,9 +133,11 @@ extension CountriesSearchViewController: CountriesViewDisplayable {
         
         //show locally saved countries when offline
         if (!self.isConnectedToInternet() && !self.isSearching) {
-            self.searchedCountries = self.countries
-            self.refreshTableView()
-            return
+            if (self.countries != nil || (self.countries?.count)! > 0) {
+                self.searchedCountries = self.countries
+                self.refreshTableView()
+                return
+            }
         }
         
         self.searchedCountries?.removeAll()

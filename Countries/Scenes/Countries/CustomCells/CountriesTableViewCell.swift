@@ -31,6 +31,7 @@ class CountriesTableViewCell: UITableViewCell {
         //Set country name
         self.nameLabel.text = country.name ?? ""
         
+        self.flagImageView.image = UIImage.init(named: "FlagPlaceholder")
         //Load and set flag image asynchronously
         let fileName = NSURL(fileURLWithPath: (country.flag)!).deletingPathExtension?.lastPathComponent
         let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)

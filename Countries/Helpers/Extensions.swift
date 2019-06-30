@@ -78,8 +78,9 @@ extension UIImageView {
                 return
             }
             DispatchQueue.main.async(execute: { () -> Void in
-                let anSVGImage: SVGKImage = SVGKImage(data: data)
-                self.image = anSVGImage.uiImage
+                if let anSVGImage: SVGKImage = SVGKImage(data: data) {
+                    self.image = anSVGImage.uiImage
+                }
             })
         }).resume()
     }
