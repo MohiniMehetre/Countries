@@ -6,14 +6,28 @@
 //  Copyright © 2019 Mohini Mehetre. All rights reserved.
 //
 
+import UIKit
 import XCTest
 
+@testable import Countries
+
 class CountriesUITests: XCTestCase {
-        
+    
+    var viewController: CountriesSearchViewController!
+
     override func setUp() {
         super.setUp()
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyboard = UIStoryboard(name: "Main",
+                                      bundle: Bundle.main)
+        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        viewController = navigationController.topViewController as? CountriesSearchViewController
+        
+        UIApplication.shared.keyWindow!.rootViewController = viewController
+        
+        let _ = navigationController.view
+        let _ = viewController.view
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -29,24 +43,29 @@ class CountriesUITests: XCTestCase {
     }
     
     func testForOnline_WithSave() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
         let app = XCUIApplication()
         let typeCountryNameHereSearchField = app.searchFields["Type country name here..."]
         typeCountryNameHereSearchField.tap()
+        typeCountryNameHereSearchField.tap()
+        let iKey = app.keys["I"]
+        iKey.tap()
         
-        app/*@START_MENU_TOKEN@*/.keys["I"]/*[[".keyboards.keys[\"I\"]",".keys[\"I\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Indonesia"]/*[[".cells.staticTexts[\"Indonesia\"]",".staticTexts[\"Indonesia\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.keys["n"].tap()
+        app.keys["d"].tap()
+        
+        app.buttons["Search"].tap()
+        app.tables.staticTexts["India"].tap()
         
         let countryDetailsNavigationBar = app.navigationBars["Country Details"]
         countryDetailsNavigationBar.buttons["Save"].tap()
         app.alerts["Alert"].buttons["OK"].tap()
         countryDetailsNavigationBar.buttons["Online Search"].tap()
-        typeCountryNameHereSearchField.buttons["Clear text"].tap()
+        typeCountryNameHereSearchField.tap()
         app.buttons["Cancel"].tap()
     }
     
+    func testForOffline() {
+//        XCTAssertTrue(viewController.isConnectedToInternet())
+        
+    }
 }

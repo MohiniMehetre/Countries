@@ -15,6 +15,7 @@
 		3541322B22C73E0F00477CA0 /* CountryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541322A22C73E0F00477CA0 /* CountryInformation.swift */; };
 		3541322E22C742FA00477CA0 /* AppDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541322D22C742FA00477CA0 /* AppDisplayable.swift */; };
 		3541323022C76FA000477CA0 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541322F22C76FA000477CA0 /* CountryDetailsViewController.swift */; };
+		35826D8E22CA0F3000410386 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35826D8D22CA0F2F00410386 /* WebKit.framework */; };
 		35A430AC22C79FB300FE5390 /* CountriesDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A430AA22C79FB300FE5390 /* CountriesDatabaseManager.swift */; };
 		35A430AD22C79FB300FE5390 /* CountriesFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A430AB22C79FB300FE5390 /* CountriesFileManager.swift */; };
 		35E29A7822C684D6000A53FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E29A7722C684D6000A53FE /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 		3541322A22C73E0F00477CA0 /* CountryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInformation.swift; sourceTree = "<group>"; };
 		3541322D22C742FA00477CA0 /* AppDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDisplayable.swift; sourceTree = "<group>"; };
 		3541322F22C76FA000477CA0 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		35826D8D22CA0F2F00410386 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		35A430AA22C79FB300FE5390 /* CountriesDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesDatabaseManager.swift; sourceTree = "<group>"; };
 		35A430AB22C79FB300FE5390 /* CountriesFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesFileManager.swift; sourceTree = "<group>"; };
 		35E29A7422C684D6000A53FE /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35826D8E22CA0F3000410386 /* WebKit.framework in Frameworks */,
 				8ECB84BD528FCF8A0BA35B5B /* Pods_Countries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +304,7 @@
 		72E688362DDAA403059BDC83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35826D8D22CA0F2F00410386 /* WebKit.framework */,
 				1027B3943BCAFF3B4D952C2A /* Pods_Countries.framework */,
 				12FE9128AC48EDE81E7B8466 /* Pods_CountriesTests.framework */,
 				ECB4D794CFEDF66BA58A830A /* Pods_CountriesUITests.framework */,
