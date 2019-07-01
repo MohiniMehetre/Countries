@@ -28,9 +28,25 @@ class CountriesUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testForOnline_WithSave() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let typeCountryNameHereSearchField = app.searchFields["Type country name here..."]
+        typeCountryNameHereSearchField.tap()
+        
+        app/*@START_MENU_TOKEN@*/.keys["I"]/*[[".keyboards.keys[\"I\"]",".keys[\"I\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Indonesia"]/*[[".cells.staticTexts[\"Indonesia\"]",".staticTexts[\"Indonesia\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let countryDetailsNavigationBar = app.navigationBars["Country Details"]
+        countryDetailsNavigationBar.buttons["Save"].tap()
+        app.alerts["Alert"].buttons["OK"].tap()
+        countryDetailsNavigationBar.buttons["Online Search"].tap()
+        typeCountryNameHereSearchField.buttons["Clear text"].tap()
+        app.buttons["Cancel"].tap()
     }
     
 }
