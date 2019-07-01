@@ -76,8 +76,9 @@ class CountryDetailsViewController: UIViewController, AppDisplayable {
     //MARK:- IBAction methods
     
     @IBAction func handleSave() {
-        let fileName = NSURL(fileURLWithPath: (self.countryInformation?.flag)!).deletingPathExtension?  .lastPathComponent
-        self.countryInformation?.flag = CountriesFileManager.shared().saveFileNamed(fileName: fileName!, image: self.countryFlagImageView.image!)
+        if let fileName = NSURL(fileURLWithPath: (self.countryInformation?.flag)!).deletingPathExtension?.lastPathComponent {
+            self.countryInformation?.flag = CountriesFileManager.shared().saveFileNamed(fileName: fileName, image: self.countryFlagImageView.image!)
+        }
         
         let status = CountriesDatabaseManager.shared().save(countryDetails: self.countryInformation!)
         if (status) {
