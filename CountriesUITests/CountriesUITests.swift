@@ -9,8 +9,6 @@
 import UIKit
 import XCTest
 
-@testable import Countries
-
 class CountriesUITests: XCTestCase {
     
     var viewController: CountriesSearchViewController!
@@ -19,16 +17,7 @@ class CountriesUITests: XCTestCase {
         super.setUp()
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        let storyboard = UIStoryboard(name: "Main",
-                                      bundle: Bundle.main)
-        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-        viewController = navigationController.topViewController as? CountriesSearchViewController
-        
-        UIApplication.shared.keyWindow!.rootViewController = viewController
-        
-        let _ = navigationController.view
-        let _ = viewController.view
-        
+       
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
@@ -42,6 +31,7 @@ class CountriesUITests: XCTestCase {
         super.tearDown()
     }
     
+    //Covers listing of all countries, search, details and save functionality
     func testForOnline_WithSave() {
         let app = XCUIApplication()
         let typeCountryNameHereSearchField = app.searchFields["Type country name here..."]
@@ -64,8 +54,32 @@ class CountriesUITests: XCTestCase {
         app.buttons["Cancel"].tap()
     }
     
+    // First set nerwork connection to OFF, before excecuting this test case
     func testForOffline() {
-//        XCTAssertTrue(viewController.isConnectedToInternet())
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
         
+        let onlineSearchButton = app.navigationBars["Country Details"].buttons["Online Search"]
+        
+        let indiaStaticText = tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["India"]/*[[".cells.staticTexts[\"India\"]",".staticTexts[\"India\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        if indiaStaticText.waitForExistence(timeout: 2) {
+            indiaStaticText.tap()
+            onlineSearchButton.tap()
+            app.searchFields["Type country name here..."].tap()
+            
+            let iKey = app/*@START_MENU_TOKEN@*/.keys["I"]/*[[".keyboards.keys[\"I\"]",".keys[\"I\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+            iKey.tap()
+            
+            let nKey = app/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+            nKey.tap()
+            
+            let dKey = app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+            dKey.tap()
+            app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards.buttons[\"Search\"]",".buttons[\"Search\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+            indiaStaticText.tap()
+            onlineSearchButton.tap()
+            app.buttons["Cancel"].tap()
+            
+        }
     }
 }
