@@ -11,8 +11,6 @@ import XCTest
 
 class CountriesUITests: XCTestCase {
     
-    var viewController: CountriesSearchViewController!
-
     override func setUp() {
         super.setUp()
         
@@ -40,13 +38,19 @@ class CountriesUITests: XCTestCase {
         let iKey = app.keys["I"]
         iKey.tap()
         
-        app.keys["n"].tap()
-        app.keys["d"].tap()
+        let nKey = app/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        nKey.tap()
         
-        app.buttons["Search"].tap()
-        app.tables.staticTexts["India"].tap()
+        let dKey = app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        dKey.tap()
+        
+        app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards.buttons[\"Search\"]",".buttons[\"Search\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["India"]/*[[".cells.staticTexts[\"India\"]",".staticTexts[\"India\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
         let countryDetailsNavigationBar = app.navigationBars["Country Details"]
+        
+        XCTAssert(app.images["Flag Image"].exists) 
+        
         countryDetailsNavigationBar.buttons["Save"].tap()
         app.alerts["Alert"].buttons["OK"].tap()
         countryDetailsNavigationBar.buttons["Online Search"].tap()
@@ -79,7 +83,6 @@ class CountriesUITests: XCTestCase {
             indiaStaticText.tap()
             onlineSearchButton.tap()
             app.buttons["Cancel"].tap()
-            
         }
     }
 }
