@@ -73,8 +73,18 @@ extension CountriesSearchViewController: UITableViewDataSource, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let countryCell = tableView.dequeueReusableCell(withIdentifier: "countriesCellIdentifier") as! CountriesTableViewCell
-        countryCell.setUpCountryCell(country: self.searchedCountries![indexPath.row])
+        var cellIdentifier = "countriesCellIdentifier_webView" //With WKWebView
+        let country = self.searchedCountries![indexPath.row]
+        let fileName = NSURL(fileURLWithPath: (country.flag)!).deletingPathExtension?.lastPathComponent
+        let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)
+        
+        if(flagImage != nil) {
+            cellIdentifier = "countriesCellIdentifier" //With UIImageView
+        }
+        
+        let countryCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! CountriesTableViewCell
+        
+        countryCell.setUpCountryCell(country: country)
         return countryCell
     }
     

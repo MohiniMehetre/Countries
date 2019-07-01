@@ -52,7 +52,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="9f2-5i-90j">
-                                    <rect key="frame" x="0.0" y="88" width="382" height="1"/>
+                                    <rect key="frame" x="0.0" y="148" width="382" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -92,6 +92,48 @@
                                         <connections>
                                             <outlet property="flagImageView" destination="89B-N4-2VI" id="IcU-Df-td7"/>
                                             <outlet property="nameLabel" destination="2Hb-oV-zov" id="c9P-Fb-q8h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="countriesCellIdentifier_webView" rowHeight="60" id="O6A-Tm-iOW" customClass="CountriesTableViewCell" customModule="Countries" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="382" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O6A-Tm-iOW" id="prc-xB-AmU">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="59.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FB-gx-fEA">
+                                                    <rect key="frame" x="15" y="10" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="4Z7-qn-lr1"/>
+                                                        <constraint firstAttribute="height" constant="40" id="rZp-ha-Pwv"/>
+                                                    </constraints>
+                                                    <wkWebViewConfiguration key="configuration">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF3-pC-fGW">
+                                                    <rect key="frame" x="70" y="19" width="277" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IF3-pC-fGW" secondAttribute="trailing" constant="15" id="Ap3-7x-Rcp"/>
+                                                <constraint firstItem="IF3-pC-fGW" firstAttribute="leading" secondItem="6FB-gx-fEA" secondAttribute="trailing" constant="15" id="RNh-ed-yBS"/>
+                                                <constraint firstItem="6FB-gx-fEA" firstAttribute="centerY" secondItem="prc-xB-AmU" secondAttribute="centerY" id="XtM-nR-8cH"/>
+                                                <constraint firstItem="IF3-pC-fGW" firstAttribute="top" secondItem="prc-xB-AmU" secondAttribute="topMargin" constant="8" id="a2h-wc-YGH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="IF3-pC-fGW" secondAttribute="bottom" constant="9" id="bW4-v5-Vhz"/>
+                                                <constraint firstItem="6FB-gx-fEA" firstAttribute="leading" secondItem="prc-xB-AmU" secondAttribute="leading" constant="15" id="zQ0-PP-hOD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="flagWebView" destination="6FB-gx-fEA" id="iKj-VV-vHr"/>
+                                            <outlet property="nameLabel" destination="IF3-pC-fGW" id="b7W-sH-VeM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

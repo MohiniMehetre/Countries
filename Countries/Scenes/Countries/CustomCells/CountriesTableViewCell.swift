@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import WebKit
 
 class CountriesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var flagImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var flagWebView: WKWebView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,16 +33,24 @@ class CountriesTableViewCell: UITableViewCell {
         //Set country name
         self.nameLabel.text = country.name ?? ""
         
-        self.flagImageView.image = UIImage.init(named: "FlagPlaceholder")
-        //Load and set flag image asynchronously
-        let fileName = NSURL(fileURLWithPath: (country.flag)!).deletingPathExtension?.lastPathComponent
-        let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)
-        
-        if(flagImage != nil) {
-            self.flagImageView.image = flagImage
+        if (self.flagImageView != nil) {
+            self.flagImageView.image = UIImage.init(named: "FlagPlaceholder")
+            //Load and set flag image asynchronously
+            let fileName = NSURL(fileURLWithPath: (country.flag)!).deletingPathExtension?.lastPathComponent
+            let flagImage = CountriesFileManager.shared().getImageFromFileNamed(fileName: fileName!)
+            
+            if(flagImage != nil) {
+                self.flagImageView.image = flagImage
+            }
+            else {
+                self.flagImageView.downloadAndSetImageWithUrl(imageUrl: country.flag ?? "")
+            }
         }
-        else {
-            self.flagImageView.downloadAndSetImageWithUrl(imageUrl: country.flag ?? "")
+        else if (self.flagWebView != nil) {
+            if let urlString = country.flag {
+                self.flagWebView.stopLoading()
+                self.flagWebView.load(URLRequest(url: URL(string: urlString)!))
+            }
         }
     }
 }
