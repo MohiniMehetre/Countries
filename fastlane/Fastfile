@@ -25,7 +25,7 @@ platform :ios do
  
   lane :CD do |values|
  
-    gym(scheme: 'Countries', project: "Countries.xcworkspace", clean: true, silent: true, include_bitcode: true, export_method: 'ad-hoc')
+    gym(scheme: 'Countries', project: "Countries.xcodeproj", clean: true, silent: true, include_bitcode: true, export_method: 'ad-hoc')
  
     emails = values[:'[mohinimehetre@gmail.com]'] ? values[:'[aditi.desai@silicus.com]'] : ['[mohini.mehetre@silicus.com]'] # You can list more emails here
     groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
