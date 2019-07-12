@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
         print("First push using Jenkins")
         print("Second push using Jenkins")
+        print("Third push using Jenkins")
         return true
     }
 
