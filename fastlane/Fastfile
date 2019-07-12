@@ -18,7 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :CI do
-#      run_tests(project: "Countries.xcodeproj",
+      run_tests(project: "Countries.xcodeproj",
       devices: ["iPhone 6s"],
       scheme: "Countries")
   end
