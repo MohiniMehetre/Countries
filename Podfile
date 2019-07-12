@@ -9,6 +9,8 @@ target 'Countries' do
 	pod 'Moya', '~> 13.0'
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'SVGKit'
+    pod 'Fabric'
+    pod 'Crashlytics'
 
   target 'CountriesTests' do
     inherit! :search_paths
