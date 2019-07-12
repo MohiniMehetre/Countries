@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
         print("First push using Jenkins")
+        print("Second push using Jenkins")
         return true
     }
 
