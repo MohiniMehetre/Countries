@@ -18,9 +18,9 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :CI do
-	build_app(scheme: "MyApp",
-            workspace: "Example.xcworkspace",
-            include_bitcode: true)
+	build_app(scheme: "Countries",
+            workspace: "Countries.xcworkspace",
+            include_bitcode: false)
  #     run_tests(project: "Countries.xcodeproj",
  #     devices: ["iPhone 6s"],
  #     scheme: "Countries")
