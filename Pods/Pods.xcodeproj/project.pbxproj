@@ -16,7 +16,6 @@
 				C9CEFEFAAAEDB8CD947737FA56C849D4 /* PBXTargetDependency */,
 			);
 			name = Crashlytics;
-			productName = Crashlytics;
 		};
 		D35E9EC86D36A4C8BC1704199FDB3552 /* Fabric */ = {
 			isa = PBXAggregateTarget;
@@ -26,7 +25,6 @@
 			dependencies = (
 			);
 			name = Fabric;
-			productName = Fabric;
 		};
 /* End PBXAggregateTarget section */
 
@@ -52,6 +50,7 @@
 		0D2937DA8C54A7C1056C13B94286A385 /* SVGKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FC6AD06B59A11DCF916FE2D6BB8757 /* SVGKImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		10D0421BB38B9F58B8F0E4C01E47F3B4 /* SVGPolylineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1247F47AB8774338DB629524F9E2BA92 /* SVGPolylineElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1152B53C54E6CEE5ABEDB944E0786894 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = A88164EB97700305BD3CC274ED507D3D /* Comment.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1167A9B00EF5940A9A7777E29D432EA3 /* Pods-CountriesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFB397C272DA4E2625573F91D54353E /* Pods-CountriesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11F309B46EE6B36CB281409A579996C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
 		121FFDBF547763DCD48BEA01242DC2B0 /* SVGTextElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0BF9A39D3AB32A4565D9C70CD89A07 /* SVGTextElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		122DDB748834BC2CAE9EC8FC716C94C4 /* DOMGlobalSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = A927611ADD4DCB1292DAEA635C598F50 /* DOMGlobalSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,13 +63,14 @@
 		18D79982A6C39669EAE36FBC901498E4 /* SVGKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AA11317677C44D3528AE7F1276B5B6 /* SVGKLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1B131595178FA51FC0B7C2FB12ED5ADB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B840A7644B0856EB97E0D86AC3844 /* Endpoint.swift */; };
 		1C496E2C46E94DECD60F0B1C7CA511E4 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BB1DF0E30EA0393794397BC2F2F7C /* NetworkLoggerPlugin.swift */; };
+		1C71FB9A4D2DB36492104D0C789A4D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
 		1CBEC3147AD87F9EFDEEBFE0C413197B /* Attr.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FD91B8752E8D3A932A52DD28F2442 /* Attr.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE1B482F6E66306CBFD99436E1E969 /* Notifications.swift */; };
 		1D9DCED7E86ECE24671CE31D924EE1FD /* SVGTitleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B528DF984E8DA7BB0144E898625DF473 /* SVGTitleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EC7ADA61802EF8E3944C2337BEC38E9 /* CSSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E1F186A99DB258CBED744B4BD870FE /* CSSValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F754D58D7C2109578225846E3B06EC1 /* SVGElementInstanceList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4F7F24F12F0CC02869B66ED5C46DD1 /* SVGElementInstanceList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F9F445F8432F82986F6992B067DC5B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
 		201198F7C3646AE6FFDF49574110D21B /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7CEFA1FB378410D8397528241A63 /* CocoaLumberjack-dummy.m */; };
+		20B374DB393D7442238250AC2F690E52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
 		218304118F82955E081FDA44FF5F8D69 /* SVGKSourceNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7425EE9DDC09A816925875CE7500DCF9 /* SVGKSourceNSData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		225E880F1459B17432E7DF840D03A3E7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8688C1FFF38A1232B9442D531FC7E /* Task.swift */; };
 		22B57F32A2EC862304F2CADE7071B59B /* Text.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F0C10D1A3E1AA5946BD1D6C53835AE /* Text.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -119,7 +119,6 @@
 		3F4936D5F4BE09AD0CEBB1FA0EE30E98 /* CSSPrimitiveValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7731563FC8277B1994A206A5361B945C /* CSSPrimitiveValue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3F957D7FC906159995C284FE0EB6F653 /* SVGKSourceURL.h in Headers */ = {isa = PBXBuildFile; fileRef = F70275DAB7F943A3BCA58D4088EDB986 /* SVGKSourceURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404CCBD1DBAC0CE034011473D1A3B307 /* CSSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610A3AA6516592ED6365EA5E345644A /* CSSRule.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		408C823FCF24088BA68E34BD0F3B038C /* Pods-CountriesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C348D7C548125A08F5EDF6447218820 /* Pods-CountriesTests-dummy.m */; };
 		40B0F0F5E19F13E54466CAE3F5F3D57C /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = CB018017B690F16479EB52775BABED93 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41F0B1110111CA93DFA271A84A62D00C /* SVGKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE0180DA544C4458557FF5256CD7E95 /* SVGKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		422FCE141EECDE997DFC09BC86D2F47D /* SVGEllipseElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 195D303B61F9724C65F12DBE92413496 /* SVGEllipseElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -127,6 +126,7 @@
 		453D4248AFD9F5E3962B8E84A39927C1 /* SVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = C62ABC1AEEF7DB7CD860C3B49F6839ED /* SVGElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		456A95D606A14F0B37B86DC662DD84C0 /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = 6426C92F7337639DC99D62E4AB9DDD50 /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		465BC44FF0CCC7713EB83A981C48E7DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
+		467E5562DBC41A481A39EB98E5B3E9BF /* Pods-CountriesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 815450124BF4993B1D562AB371753329 /* Pods-CountriesTests-dummy.m */; };
 		4813B1DD77B630FE8A5D315F3CAB052F /* SVGKPointsAndPathsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EE27BFABB20777C75D8921DC8AB6C5 /* SVGKPointsAndPathsParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		48B30F6B2E00D5ADFC215FBD915C1677 /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = A3171F357C45140A6950FA46178C0EDF /* DDLoggerNames.m */; };
 		4908A16209BF8155B3233D85365526E1 /* AppleSucksDOMImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E25CFCCA6A52DCB77BA22D4AB038481 /* AppleSucksDOMImplementation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -196,6 +196,7 @@
 		735D33696E9DEADF2C90CC145372B2A9 /* SVGGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 703CC94464CDD8968C2F864F34E247BD /* SVGGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758568187A78D8771666366D1A014755 /* NetworkReachabilityManager.swift */; };
 		76BF6811D618D3027AC9F16A2B4B7137 /* SVGLineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E27F2EF7BEA32A6CB5ED1DC7ECFC8190 /* SVGLineElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76F6222B798859CA2D0FDF77273C5B5A /* Pods-CountriesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FD352A663EBD8DFE180FFC9B262551 /* Pods-CountriesUITests-dummy.m */; };
 		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F73BB46314D2446CBB41B354CD6451C /* Alamofire-dummy.m */; };
 		772E850C8E263F52DB3C6ED754F2EA8C /* SVGKImage+CGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FB9633F26E5183D748A304B493CDD8 /* SVGKImage+CGContext.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7777B6A1283D383629B03215086AD8E0 /* SVGKParseResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F50F94E6C70C304B999C835C7FBEDA47 /* SVGKParseResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -227,6 +228,7 @@
 		8B19272FDD647F28186187FB9BBAF4CA /* ConverterSVGToCALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0DED2B9D8BEDB3F5CEEE52E95A1254 /* ConverterSVGToCALayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C6E7ED1ECECFB83B8B61763D48C156D /* DocumentFragment.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE4555FECD8080899664696E12B2BD5 /* DocumentFragment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED12BBCC05540843CE707457998C5F5 /* ServerTrustPolicy.swift */; };
+		8E57CDEB3A7DF474FAF62BE4D2EF58F7 /* Pods-CountriesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA7AA70CF0662F141D5D8B23AB7A886 /* Pods-CountriesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E6932A74E1616B7555D8D6C9F8FE4EA /* SVGElementInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E1DAF003765BD470F0D62E89D73A32 /* SVGElementInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8ECD643AEFFA9819D79278BA38A1D6F7 /* SVGSwitchElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 57BD1479EEBFBDDD23393501DB08D78B /* SVGSwitchElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F23D48C6FE939ADDB4D29C7794C21BB /* SVGKFastImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A52142D60023470EBADBCBDF585BF0B /* SVGKFastImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -264,7 +266,6 @@
 		ABB7782355ADE81F10F725137B8934A9 /* CSSPrimitiveValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 473772800F0829B8BFF4D27D673CC8D7 /* CSSPrimitiveValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC7965B4371AE322BD04D9ADF5129E15 /* SVGMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A268465D22A9AB5F5EEA552D0FF2FD9 /* SVGMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC7EF194D29927E5598ECB5D48B13412 /* CSSValue_ForSubclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 79EE9A99B77052B22014A94669060BD1 /* CSSValue_ForSubclasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE274EE67B0BC74F9518E12F190CCAEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */; };
 		AE71FBDFCA9D65645E66CC9C21F0D59E /* SVGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 980B3D02EDFA309E41F7326B0F6EDFDA /* SVGPoint.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395CC51810E25149440BB75A346EBC09 /* MultipartFormData.swift */; };
 		B125D91733AD3CFE32519A33CFB49F94 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4593D39A17058503117E8A07622B83 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -284,7 +285,6 @@
 		B9D9CD9931B6462BC4E2039370DD3E26 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4CC5C79F14EE04C9F0F4608D162724 /* DDAbstractDatabaseLogger.m */; };
 		BA7B10AB1D14254F322AF32B173F683C /* Text.m in Sources */ = {isa = PBXBuildFile; fileRef = C31E523769EE773545E37776DFA038B1 /* Text.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BBB2912F60065091E4E1D03DE3BE5E52 /* SVGElementInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB300F05F8F8766C85362B906EA06B6 /* SVGElementInstance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BBB293D752ACD4066778FC92A03AE6F1 /* Pods-CountriesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE766E29E46991CC3564F0A77C37FEC /* Pods-CountriesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC66350B1E25C4F78C55574B3B9FD30C /* CDATASection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8710B84976B07567AA344050395FDA /* CDATASection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD3AE71110449A12622EF7900B3485B2 /* SVGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 699AF5990E33E8ED0F0792EDB040B557 /* SVGUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BFEFA24035CE066DF0AC5217B4FD2E09 /* SVGSVGElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A530421DBF39B23D69178B3C9932160 /* SVGSVGElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -294,9 +294,8 @@
 		C5B8CBA9E40FE37E93B44EA126B3E7C5 /* SVGStyleCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6EA9DBE6512768697E68B0B5581F06 /* SVGStyleCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C77EA83F416BC5F0D0546231E0C7F594 /* SVGKParserGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = C6681417CA48C08936C65B532A0EE2BA /* SVGKParserGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7C02DB97C68B290FCB39E5C723E4ABE /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5170DEE002BA91404EA21D7D4EC8FD13 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FA76AAAC06B196116C6B86EC446A6A /* Pods-CountriesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27BD52A60126F724EB533F51628EC6 /* Pods-CountriesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8A55A6B932FD8A0EE0C8B11B0F6C9B7 /* SVGEllipseElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CB0CBCB7F9E5DD9C7796A1D9555418 /* SVGEllipseElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C95456CE44E997DDCE7D94DE65F10AC9 /* Pods-Countries-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0C4F3510A021CA1F26D4F9E80D79B4 /* Pods-Countries-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95456CE44E997DDCE7D94DE65F10AC9 /* Pods-Countries-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 512D9BDA30A295FF47374E9E89F11222 /* Pods-Countries-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9BCA956DF19E3601708E6694775F431 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 95451190D012C4E1CC1C7320C873EC8C /* DDOSLogger.m */; };
 		C9F3D830A3FD05D1C1A8C022399D58D1 /* SVGGroupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD97B80864B96FE3E86BBE3BCDAC77B /* SVGGroupElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CAA11CC14D946BDAEB652338F6208A44 /* SVGKParseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C7438A6182E01587C753445F799C44 /* SVGKParseResult.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -337,7 +336,6 @@
 		E20C8AE79AD7CC949232C62F381AD0EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034F7F53C4F8026080F34D871A7088C7 /* QuartzCore.framework */; };
 		E2A99F8123FA600169EF115E70FC4B06 /* SVGKParserPatternsAndGradients.m in Sources */ = {isa = PBXBuildFile; fileRef = 06561FC36E283F90BC66BC14D9B00818 /* SVGKParserPatternsAndGradients.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E4A3B41C517EEDF2D13D9BCB8648FF5C /* CSSRule.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E21AA3DBF31F85E991477DCD1950D1 /* CSSRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5172689DE9D3153FC090CBD977F244B /* Pods-CountriesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 765DF179956180C8945D6017767AB55F /* Pods-CountriesUITests-dummy.m */; };
 		E540A60E1801F853BD0D592387D30802 /* SVGKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A82988A670C343BAD86D7D0A5FF5D3 /* SVGKImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5481341784DB07AD1F5F7FFC4B39C7B /* SVGHelperUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE675FFCFAE88587851D5BBD4ACCE4 /* SVGHelperUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E59E84949C823A89902F99E377FF8591 /* SVGElementInstanceList_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 15820DDE1169C56538336A03170B4D59 /* SVGElementInstanceList_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -371,16 +369,37 @@
 		FCEECBFA385FB0C7C26FE51FDB8479A9 /* Document+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3A46906D3AAA8FC4F5AA1E46C0AAA9 /* Document+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDE88237E7536C4977DFE64140CE8E9A /* EntityReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7F6B89AF3365A52436AFCE5FCAEAFB /* EntityReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF38A3D897A7C4228CAA5CCA71401376 /* MoyaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F02A0CF71D83FD5CAA0A0821DA00A /* MoyaError.swift */; };
-		FFD101381BCAB297814FF0ADF110C5BB /* Pods-Countries-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D2AE03BA99C7748242B1231E2E778E /* Pods-Countries-dummy.m */; };
+		FFD101381BCAB297814FF0ADF110C5BB /* Pods-Countries-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BEB96EB2AA87B204D2F23B5492D74 /* Pods-Countries-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A049226E58072199422DDC300DE726E /* PBXContainerItemProxy */ = {
+		01072A8CC58D478B19C1D1BB5BCE13E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAB01D1BA82ABAE2B535579B77ED0CB;
+			remoteInfo = Moya;
+		};
+		0859D349836AD0094865CF753F8100C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D907A2182514188BFA198DB79AA3CA;
+			remoteInfo = MBProgressHUD;
+		};
+		119B3C73520E19BF1AA68BEF1FFF47D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E30C2087E8E99285E7A2A0CF39B488AA;
 			remoteInfo = "Pods-Countries";
+		};
+		185DEC1DD4B4CD6785F2D04DA2B21ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35E9EC86D36A4C8BC1704199FDB3552;
+			remoteInfo = Fabric;
 		};
 		25CA6555ECC69B89E2D645DEDD5E4334 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -389,7 +408,35 @@
 			remoteGlobalIDString = 005D2CE47851CEF966828826F979CC7E;
 			remoteInfo = CocoaLumberjack;
 		};
+		2824B2F58B6CC3FEFBDCC411947A5E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B0183450F95394DC0C49E326A20B42D;
+			remoteInfo = Result;
+		};
 		32FE2C07A53CE757E7F8B758211B3FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7022FE77DF3DEA8B5687543E6BB43819;
+			remoteInfo = SVGKit;
+		};
+		4B398CF15408E2935B2AC8F7158DDD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005D2CE47851CEF966828826F979CC7E;
+			remoteInfo = CocoaLumberjack;
+		};
+		56C34FC18F6CC9AE222555AE3007EEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D907A2182514188BFA198DB79AA3CA;
+			remoteInfo = MBProgressHUD;
+		};
+		57A782E61190CBF7ECA2AF16BD1C6850 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -410,6 +457,20 @@
 			remoteGlobalIDString = 73D907A2182514188BFA198DB79AA3CA;
 			remoteInfo = MBProgressHUD;
 		};
+		60B9BD6122ED18249C7CDF891C8CDA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA9A411BB5A359862E5F1AA6238278E;
+			remoteInfo = Crashlytics;
+		};
+		66E6B901FBD8448BF8DC512F38B2E7A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35E9EC86D36A4C8BC1704199FDB3552;
+			remoteInfo = Fabric;
+		};
 		6A4EDBBF08D44260DF0148CD85CDDA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -423,13 +484,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
 			remoteInfo = Alamofire;
-		};
-		828AD9012DE644FD5D9CCAF3C71D4A12 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E30C2087E8E99285E7A2A0CF39B488AA;
-			remoteInfo = "Pods-Countries";
 		};
 		872F4F24B0695364C3B517664AB143FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -445,6 +499,13 @@
 			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
 			remoteInfo = Alamofire;
 		};
+		95333F2DB4522C28ACDA9C3DE27ACADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E30C2087E8E99285E7A2A0CF39B488AA;
+			remoteInfo = "Pods-Countries";
+		};
 		95F80E7390A5F8AFC399036178C41FBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -459,12 +520,54 @@
 			remoteGlobalIDString = BAAB01D1BA82ABAE2B535579B77ED0CB;
 			remoteInfo = Moya;
 		};
+		AAA6D1660C4907CABF58273FE62E649D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B0183450F95394DC0C49E326A20B42D;
+			remoteInfo = Result;
+		};
+		B32067D66E045192ECB58091087F9B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA9A411BB5A359862E5F1AA6238278E;
+			remoteInfo = Crashlytics;
+		};
+		C7C0D3F5B9EB6580E1417EC813F847AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005D2CE47851CEF966828826F979CC7E;
+			remoteInfo = CocoaLumberjack;
+		};
+		C895429DF1E80EE395222ACD6E17BA49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
+			remoteInfo = Alamofire;
+		};
 		D465047540D12FD9D95291AE82A76DB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D35E9EC86D36A4C8BC1704199FDB3552;
 			remoteInfo = Fabric;
+		};
+		D58684261B4CF49E547EB868D9EBDCC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAB01D1BA82ABAE2B535579B77ED0CB;
+			remoteInfo = Moya;
+		};
+		EB76E3D7581C2FC0DD5E6AC2EC2DC8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7022FE77DF3DEA8B5687543E6BB43819;
+			remoteInfo = SVGKit;
 		};
 		F4F2B0FFD8E83F40598EA47F17D0FCA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -473,12 +576,18 @@
 			remoteGlobalIDString = ABA9A411BB5A359862E5F1AA6238278E;
 			remoteInfo = Crashlytics;
 		};
+		FC52BC6AF0858F38D9525A39AC9F2E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0019E820031FA37A173161C5D4B7D18D /* SVGKParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParser.h; path = Source/Parsers/SVGKParser.h; sourceTree = "<group>"; };
 		0040B2384CB0AACE9A2D274B04B23DBD /* SVGKSourceString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceString.m; path = Source/Sources/SVGKSourceString.m; sourceTree = "<group>"; };
-		011233285FAAD46473CF5DA8447D7F7C /* Pods-Countries-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-acknowledgements.plist"; sourceTree = "<group>"; };
 		01DCC64097380EC23D2DBE8997887B57 /* SVGDescriptionElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDescriptionElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGDescriptionElement.m"; sourceTree = "<group>"; };
 		025423B5BE17F37A215A693BF2008864 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		02FB9633F26E5183D748A304B493CDD8 /* SVGKImage+CGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SVGKImage+CGContext.m"; path = "Source/Exporters/SVGKImage+CGContext.m"; sourceTree = "<group>"; };
@@ -493,12 +602,11 @@
 		06E1F186A99DB258CBED744B4BD870FE /* CSSValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSValue.h; path = "Source/DOM classes/Core DOM/CSSValue.h"; sourceTree = "<group>"; };
 		072F094EB48A46E8BED224D38A0DFCAC /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		07D9FDA1EA66D0073301D8A90F59CFD1 /* CALayerWithClipRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CALayerWithClipRender.h; path = "Source/QuartzCore additions/CALayerWithClipRender.h"; sourceTree = "<group>"; };
-		08263212C69805BB34B79CA5927CC721 /* Pods-CountriesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		085F62660FE4BD93D8D6968175B3A173 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Classes/CLI/CLIColor.m; sourceTree = "<group>"; };
 		086D15A68B45FD07E6D48B7FA3FC7901 /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Classes/DDLoggerNames.h; sourceTree = "<group>"; };
 		0873FABE631F1F58C3A68C5A9BC66E86 /* DOMHelperUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOMHelperUtilities.m; path = "Source/DOM classes/Core DOM/DOMHelperUtilities.m"; sourceTree = "<group>"; };
 		0A7C1E033DF6C2BF73486ECF06ECC0D3 /* SVGTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTransform.m; path = "Source/DOM classes/SVG-DOM/SVGTransform.m"; sourceTree = "<group>"; };
-		0C86FD25939D84E00CD75B7478747306 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C86FD25939D84E00CD75B7478747306 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC80D64DDC45895ED8304F4F4BE1EA7 /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityPlugin.swift; path = Sources/Moya/Plugins/NetworkActivityPlugin.swift; sourceTree = "<group>"; };
 		0D0BF9A39D3AB32A4565D9C70CD89A07 /* SVGTextElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTextElement.h"; sourceTree = "<group>"; };
 		10FFA1CA664C6DC42657088BBCEC4C2A /* SVGImageElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGImageElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGImageElement.m"; sourceTree = "<group>"; };
@@ -521,45 +629,49 @@
 		18D855C697535E427133409E7D6D750E /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		194A1826A8B27F60BFB62F89CDFC784C /* CSSStyleDeclaration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleDeclaration.h; path = "Source/DOM classes/Core DOM/CSSStyleDeclaration.h"; sourceTree = "<group>"; };
 		195D303B61F9724C65F12DBE92413496 /* SVGEllipseElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGEllipseElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGEllipseElement.m"; sourceTree = "<group>"; };
+		19FD352A663EBD8DFE180FFC9B262551 /* Pods-CountriesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CountriesUITests-dummy.m"; sourceTree = "<group>"; };
 		1CAE66E9ADE9510FBA29D5BF50A53A86 /* Moya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moya-dummy.m"; sourceTree = "<group>"; };
 		1D89041AC49DE8714A492B284351731C /* SVGKDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKDefine.h; path = Source/SVGKDefine.h; sourceTree = "<group>"; };
 		1DC799E4E13388E9FC43F021A0BE512A /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
 		1E8710B84976B07567AA344050395FDA /* CDATASection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDATASection.h; path = "Source/DOM classes/Core DOM/CDATASection.h"; sourceTree = "<group>"; };
+		1E9383DF2C33E57349BC355F5629ABDB /* Pods-CountriesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CountriesUITests-frameworks.sh"; sourceTree = "<group>"; };
 		1FB300F05F8F8766C85362B906EA06B6 /* SVGElementInstance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGElementInstance.m; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.m"; sourceTree = "<group>"; };
 		1FFC2B2BDB80EDB39835E8A963F6D19F /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		20844ED7955B11E7D43C78DC7142CCC3 /* SVGRectElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGRectElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGRectElement.h"; sourceTree = "<group>"; };
-		210DAA1D11B656B342AAB268035CD9C6 /* Pods-CountriesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesUITests-Info.plist"; sourceTree = "<group>"; };
 		212AFC5D0E07EAA3FEA1D714BCC37A6F /* SVGMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGMatrix.m; path = "Source/DOM classes/SVG-DOM/SVGMatrix.m"; sourceTree = "<group>"; };
 		22885A068F81DAE2CA9ADAC9AE3D7571 /* SVGKParserSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserSVG.h; path = "Source/Parsers/Parser Extensions/SVGKParserSVG.h"; sourceTree = "<group>"; };
 		2357B68CB8112C19D7CBF32EEA3259A6 /* SVGKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVGKit-dummy.m"; sourceTree = "<group>"; };
 		238358049745BF13F92A9654CCE1F300 /* NSData+NSInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSInputStream.m"; path = "Source/Foundation additions/NSData+NSInputStream.m"; sourceTree = "<group>"; };
 		23CA6FA83DE0FD903974463FF7939C2B /* SVGKParserDOM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserDOM.h; path = "Source/Parsers/Parser Extensions/SVGKParserDOM.h"; sourceTree = "<group>"; };
 		245433EA21251295C36462C4BDB43E50 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		24B194C2BFD78A43822A524115FCC999 /* Pods-CountriesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesTests-Info.plist"; sourceTree = "<group>"; };
 		24C7438A6182E01587C753445F799C44 /* SVGKParseResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParseResult.m; path = Source/Parsers/SVGKParseResult.m; sourceTree = "<group>"; };
 		24D665CCFE4F149854BE13DFD9CF9655 /* MediaList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MediaList.m; path = "Source/DOM classes/Core DOM/MediaList.m"; sourceTree = "<group>"; };
+		266C15F756FD8289C7F371E79F56B307 /* Pods-Countries.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Countries.modulemap"; sourceTree = "<group>"; };
 		2809B2D2976CD227D8F9C27A2A652AA0 /* BaseClassForAllSVGBasicShapes_ForSubclasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseClassForAllSVGBasicShapes_ForSubclasses.h; path = "Source/DOM classes/Unported or Partial DOM/BaseClassForAllSVGBasicShapes_ForSubclasses.h"; sourceTree = "<group>"; };
+		281BEB96EB2AA87B204D2F23B5492D74 /* Pods-Countries-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countries-dummy.m"; sourceTree = "<group>"; };
 		2825E820540F80F861CBEEF0ED0E6159 /* CSSValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSValue.m; path = "Source/DOM classes/Core DOM/CSSValue.m"; sourceTree = "<group>"; };
+		28288BEF5EF2138B0CF8F9D7558B5495 /* Pods-CountriesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesUITests-Info.plist"; sourceTree = "<group>"; };
 		283E181D9DFA6AB5D3FF958F831363AA /* SVGKSourceLocalFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceLocalFile.h; path = Source/Sources/SVGKSourceLocalFile.h; sourceTree = "<group>"; };
 		296CC790206FF23D0C452FACB0D3696F /* TargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetType.swift; path = Sources/Moya/TargetType.swift; sourceTree = "<group>"; };
 		2A287F8970A49F2792AF7D27D8FABCC0 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		2A4CC5C79F14EE04C9F0F4608D162724 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		2B1B508FD299314507830FCC138B402B /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BC6BC3A934C16CD6AAC30183741EC9D /* Pods_CountriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BC6F97D875496D3666210711541AC53 /* Pods_CountriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1B508FD299314507830FCC138B402B /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC6BC3A934C16CD6AAC30183741EC9D /* Pods_CountriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CountriesUITests.framework; path = "Pods-CountriesUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC6F97D875496D3666210711541AC53 /* Pods_CountriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CountriesTests.framework; path = "Pods-CountriesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE9BA84525E9EF9E54EF1C81F762713 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
 		2C25F7053C5BCA78414C46E1BB7D723A /* CALayer+RecursiveClone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+RecursiveClone.m"; path = "Source/QuartzCore additions/CALayer+RecursiveClone.m"; sourceTree = "<group>"; };
 		2D27A1B7FA6988FF86DBFA8BB9CD433E /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
 		2D959E3A163604CCBA651838078AADD7 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
 		2E28B99ED14CCA16A1E19E8FFAEE3D03 /* SVGGradientStop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientStop.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientStop.h"; sourceTree = "<group>"; };
+		2EC7415BC0EC5B228E532545AE9F2EDD /* Pods-Countries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries.release.xcconfig"; sourceTree = "<group>"; };
 		2F46C0615BAE06FCEE8C02587389F99A /* SVGPolylineElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPolylineElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPolylineElement.m"; sourceTree = "<group>"; };
 		2FA98FE7D84E8C71601CA97AF39E9B4A /* SVGKLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKLayer.h; path = "Source/QuartzCore additions/SVGKLayer.h"; sourceTree = "<group>"; };
 		3018FC304305FE7224062378F3EC46A4 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Moya/Image.swift; sourceTree = "<group>"; };
-		31DA4951167D4C72E3F4CC1776869594 /* Pods-CountriesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CountriesTests.modulemap"; sourceTree = "<group>"; };
 		323111E29BE32EA478B7770812B02F9B /* NamedNodeMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NamedNodeMap.h; path = "Source/DOM classes/Core DOM/NamedNodeMap.h"; sourceTree = "<group>"; };
 		32AC51B4D97941955E7B5C298C7832EF /* SVGGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientElement.m"; sourceTree = "<group>"; };
 		340615F4D3D56CBD5C57BA1014ACFFBE /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		34DEC72F8820272F4118351835DA8FA7 /* SVGElement_ForParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElement_ForParser.h; path = "Source/DOM classes/Unported or Partial DOM/SVGElement_ForParser.h"; sourceTree = "<group>"; };
-		34F13AA04FC676A558DD866A37C6F511 /* Pods-Countries-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Countries-acknowledgements.markdown"; sourceTree = "<group>"; };
 		35454E865B990446E20CFE72FE4B9BAE /* CSSStyleSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleSheet.h; path = "Source/DOM classes/Core DOM/CSSStyleSheet.h"; sourceTree = "<group>"; };
 		35CB0CBCB7F9E5DD9C7796A1D9555418 /* SVGEllipseElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGEllipseElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGEllipseElement.h"; sourceTree = "<group>"; };
 		361BFEFF6205E4A6AF7541DE37BA3B4A /* NamedNodeMap_Iterable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NamedNodeMap_Iterable.h; path = "Source/DOM classes/Core DOM/NamedNodeMap_Iterable.h"; sourceTree = "<group>"; };
@@ -567,7 +679,7 @@
 		372E591E0F0CB5D9863F2875860330EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37957ED701A0E2DA601A26386FDB2102 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
 		37ADBB8E99BB7FF8C8D9CB4060C32F0D /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
-		37F3EF35C8F151572758A5E1A28165A7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F3EF35C8F151572758A5E1A28165A7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		395CC51810E25149440BB75A346EBC09 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		39B47E6F2BC6A8972FEE1D3A94164207 /* CAShapeLayerWithHitTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAShapeLayerWithHitTest.h; path = "Source/QuartzCore additions/CAShapeLayerWithHitTest.h"; sourceTree = "<group>"; };
 		3A0C1853A1DD43B3E7574F39CE70423B /* NSData+NSInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NSInputStream.h"; path = "Source/Foundation additions/NSData+NSInputStream.h"; sourceTree = "<group>"; };
@@ -583,9 +695,9 @@
 		418292E2CEE975C3A8D00CDA16430BE9 /* Attr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Attr.h; path = "Source/DOM classes/Core DOM/Attr.h"; sourceTree = "<group>"; };
 		424FBA2304FCEE6960A985555B4E7A0C /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
 		42E89F539C0A0FB27D77C53043D7A228 /* DocumentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DocumentType.m; path = "Source/DOM classes/Core DOM/DocumentType.m"; sourceTree = "<group>"; };
+		43E011A4F6B288A8AD01233847786026 /* Pods-CountriesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountriesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4413A6C1D28F962CC75778DADAB19B5E /* SVGDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGDocument.h; path = "Source/DOM classes/SVG-DOM/SVGDocument.h"; sourceTree = "<group>"; };
 		44873EFBB8F30D3271C8A8C3C6D3335F /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		449DBD732B48548C954645580D063659 /* Pods-CountriesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CountriesUITests.modulemap"; sourceTree = "<group>"; };
 		46AC55DF497F3A19405DAB551CEF114D /* SVGPreserveAspectRatio.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPreserveAspectRatio.m; path = "Source/DOM classes/SVG-DOM/SVGPreserveAspectRatio.m"; sourceTree = "<group>"; };
 		46E1DAF003765BD470F0D62E89D73A32 /* SVGElementInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstance.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.h"; sourceTree = "<group>"; };
 		473772800F0829B8BFF4D27D673CC8D7 /* CSSPrimitiveValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSPrimitiveValue.h; path = "Source/DOM classes/Core DOM/CSSPrimitiveValue.h"; sourceTree = "<group>"; };
@@ -594,11 +706,11 @@
 		48EE27BFABB20777C75D8921DC8AB6C5 /* SVGKPointsAndPathsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKPointsAndPathsParser.m; path = Source/Parsers/SVGKPointsAndPathsParser.m; sourceTree = "<group>"; };
 		49506CE6E87B542796175B0B3D8C220D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		49625FCD8354E81E49AD0D0950836BBD /* SVGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUtils.h; path = Source/Utils/SVGUtils.h; sourceTree = "<group>"; };
-		49A06DBD718D3847D21383E4ACCCA885 /* Pods-CountriesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountriesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A530421DBF39B23D69178B3C9932160 /* SVGSVGElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGSVGElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGSVGElement.m"; sourceTree = "<group>"; };
 		4B1DE0F5789A6B1A99A960663F0A8724 /* SVGViewSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGViewSpec.h; path = "Source/DOM classes/SVG-DOM/SVGViewSpec.h"; sourceTree = "<group>"; };
 		4B68F7417E31A75941C70DA5C5DA53A9 /* Moya-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-prefix.pch"; sourceTree = "<group>"; };
 		4B922F582D35D3C317D6D8A29C044DBE /* SVGTextPositioningElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextPositioningElement.h; path = "Source/DOM classes/SVG-DOM/SVGTextPositioningElement.h"; sourceTree = "<group>"; };
+		4BA7AA70CF0662F141D5D8B23AB7A886 /* Pods-CountriesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CountriesTests-umbrella.h"; sourceTree = "<group>"; };
 		4BE0EB24341AFA39D4A58916CAA0EF86 /* SVGKExporterUIImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKExporterUIImage.m; path = Source/Exporters/SVGKExporterUIImage.m; sourceTree = "<group>"; };
 		4CEC3AECA1DBDCC3C0B47FB42A07002C /* DocumentCSS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentCSS.h; path = "Source/DOM classes/Core DOM/DocumentCSS.h"; sourceTree = "<group>"; };
 		4D7F6B89AF3365A52436AFCE5FCAEAFB /* EntityReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EntityReference.h; path = "Source/DOM classes/Core DOM/EntityReference.h"; sourceTree = "<group>"; };
@@ -606,6 +718,7 @@
 		4E5E8594D93662BB2EFF3A406C0A6167 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4F656DE1A71B915AECE0940F806676FB /* SVGKPointsAndPathsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKPointsAndPathsParser.h; path = Source/Parsers/SVGKPointsAndPathsParser.h; sourceTree = "<group>"; };
 		50B28967471E4C097CE1AC7F8B080C61 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		512D9BDA30A295FF47374E9E89F11222 /* Pods-Countries-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countries-umbrella.h"; sourceTree = "<group>"; };
 		5170DEE002BA91404EA21D7D4EC8FD13 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
 		51AF0F49668DBD2399F52E8972B5BE02 /* SVGLength.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLength.h; path = "Source/DOM classes/SVG-DOM/SVGLength.h"; sourceTree = "<group>"; };
 		51C8B0D48450E8F86F1797A200AB80D1 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
@@ -617,6 +730,7 @@
 		53878CEE4AC919F662E72ABF7AAD9057 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		545AA88FB9903400253000E7235E2E15 /* SVGTextContentElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextContentElement.h; path = "Source/DOM classes/SVG-DOM/SVGTextContentElement.h"; sourceTree = "<group>"; };
 		54717C41CC9A12D8F01ECD81CC051B95 /* SVGGElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGElement.m; path = "Source/DOM classes/SVG-DOM/SVGGElement.m"; sourceTree = "<group>"; };
+		54DE2DCC39E7B120497120C7AD7A888C /* Pods-CountriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57A06A245C7C4330540EFAF3288420EC /* SVGRadialGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGRadialGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGRadialGradientElement.m"; sourceTree = "<group>"; };
 		57BD1479EEBFBDDD23393501DB08D78B /* SVGSwitchElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSwitchElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGSwitchElement.h"; sourceTree = "<group>"; };
 		58BDF609F1E66A1E6C51A9588D1CB088 /* CSSStyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSStyleSheet.m; path = "Source/DOM classes/Core DOM/CSSStyleSheet.m"; sourceTree = "<group>"; };
@@ -634,20 +748,21 @@
 		61E56E56349D21F57A1B142A29630B58 /* Moya-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moya-Info.plist"; sourceTree = "<group>"; };
 		62AC7322536C371C3583A26974902AD6 /* SVGTitleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTitleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.m"; sourceTree = "<group>"; };
 		6426C92F7337639DC99D62E4AB9DDD50 /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Classes/Extensions/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
+		64BF567FC776EC03152A741D609C47C6 /* Pods-Countries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-Info.plist"; sourceTree = "<group>"; };
 		657570772D324DA95EFE4ECF7168C21B /* DocumentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentType.h; path = "Source/DOM classes/Core DOM/DocumentType.h"; sourceTree = "<group>"; };
 		65EE675FFCFAE88587851D5BBD4ACCE4 /* SVGHelperUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGHelperUtilities.m; path = "Source/DOM classes/SVG-DOM/SVGHelperUtilities.m"; sourceTree = "<group>"; };
 		6610A3AA6516592ED6365EA5E345644A /* CSSRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSRule.m; path = "Source/DOM classes/Core DOM/CSSRule.m"; sourceTree = "<group>"; };
 		67A82988A670C343BAD86D7D0A5FF5D3 /* SVGKImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKImageView.h; path = "Source/UIKit additions/SVGKImageView.h"; sourceTree = "<group>"; };
 		680FA028C0F11D3042B9916C2E4E0F99 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		68A99A5F58C4FC5135836968B002C388 /* Pods-CountriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		699AF5990E33E8ED0F0792EDB040B557 /* SVGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGUtils.m; path = Source/Utils/SVGUtils.m; sourceTree = "<group>"; };
 		6AF249074710287AF04D38D82A180813 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
 		6C21FBFE897CFBA788E7842D8021A60F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		6D5969A4E058CD01A88EB72FA94DF42C /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5969A4E058CD01A88EB72FA94DF42C /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moya.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF37EECA895985E1EFA8589622DC73B /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		6E2C73128C89B6CB40C53995D4543B8F /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		6E3AF5D5201E04C54965C80C12A2F51A /* SVGTransformable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTransformable.h; path = "Source/DOM classes/SVG-DOM/SVGTransformable.h"; sourceTree = "<group>"; };
 		6E80957AB58C09FC4BFC4267FDCF469D /* SVGTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTransform.h; path = "Source/DOM classes/SVG-DOM/SVGTransform.h"; sourceTree = "<group>"; };
-		6EE766E29E46991CC3564F0A77C37FEC /* Pods-CountriesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CountriesTests-umbrella.h"; sourceTree = "<group>"; };
 		6F35559CD357E98D77B562387F732143 /* SVGTextPositioningElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTextPositioningElement.m; path = "Source/DOM classes/SVG-DOM/SVGTextPositioningElement.m"; sourceTree = "<group>"; };
 		6F5D6E42C43A8826C91AD0C13A4E7D25 /* Document.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = "Source/DOM classes/Core DOM/Document.m"; sourceTree = "<group>"; };
 		6F73BB46314D2446CBB41B354CD6451C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
@@ -660,23 +775,21 @@
 		756002018B49E58082F0223360A4BAEE /* SVGLinearGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLinearGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.h"; sourceTree = "<group>"; };
 		758568187A78D8771666366D1A014755 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		75D0E1C60F0E46DCDE033F617C0995A1 /* SVGKParserExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserExtension.h; path = Source/Parsers/SVGKParserExtension.h; sourceTree = "<group>"; };
-		765DF179956180C8945D6017767AB55F /* Pods-CountriesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CountriesUITests-dummy.m"; sourceTree = "<group>"; };
 		7731563FC8277B1994A206A5361B945C /* CSSPrimitiveValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSPrimitiveValue.m; path = "Source/DOM classes/Core DOM/CSSPrimitiveValue.m"; sourceTree = "<group>"; };
 		78DC9BE056E18CAD0C8CAA49272019EF /* Node.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = "Source/DOM classes/Core DOM/Node.m"; sourceTree = "<group>"; };
 		7993070534452E9CB3D7C568644269CC /* SVGCircleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGCircleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGCircleElement.m"; sourceTree = "<group>"; };
 		79EE9A99B77052B22014A94669060BD1 /* CSSValue_ForSubclasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSValue_ForSubclasses.h; path = "Source/DOM classes/Core DOM/CSSValue_ForSubclasses.h"; sourceTree = "<group>"; };
-		7A3F5EA4421B74A76B0D9AD65EB49FA0 /* Pods_Countries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3F5EA4421B74A76B0D9AD65EB49FA0 /* Pods_Countries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Countries.framework; path = "Pods-Countries.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7A742566A1F023D0EB241249EA5E72 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		7B20DC7536651799DCD0C9ED6716D512 /* SVGKSourceString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceString.h; path = Source/Sources/SVGKSourceString.h; sourceTree = "<group>"; };
 		7C16DFE537FB2BA5B16EDFE1530D0CF2 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		7C3292AF8702870B46F11A369A8CFED3 /* SVGAngle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGAngle.m; path = "Source/DOM classes/SVG-DOM/SVGAngle.m"; sourceTree = "<group>"; };
-		7C348D7C548125A08F5EDF6447218820 /* Pods-CountriesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CountriesTests-dummy.m"; sourceTree = "<group>"; };
 		7C67B31578C2B5C2AE6626783A5587B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C89485D6720E9DFB91C860BDB0179BA /* ProcessingInstruction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProcessingInstruction.h; path = "Source/DOM classes/Core DOM/ProcessingInstruction.h"; sourceTree = "<group>"; };
 		7D18BBB08E62D3CFD60D454B9E35A496 /* SVGRadialGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGRadialGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGRadialGradientElement.h"; sourceTree = "<group>"; };
 		7D6433BB7F481A95A104BB60210A90D5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		7E25CFCCA6A52DCB77BA22D4AB038481 /* AppleSucksDOMImplementation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppleSucksDOMImplementation.m; path = "Source/DOM classes/Core DOM/AppleSucksDOMImplementation.m"; sourceTree = "<group>"; };
-		7E8E71AF15237F61CF091C530A108350 /* Pods-Countries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-Info.plist"; sourceTree = "<group>"; };
+		815450124BF4993B1D562AB371753329 /* Pods-CountriesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CountriesTests-dummy.m"; sourceTree = "<group>"; };
 		8186593DEB9DAD8A932B51C6D104BFFB /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		8425A09E9B11002FF95EC730957DAB37 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		846E6873AE2BCAEA5E8BAFC3672D862F /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -688,9 +801,9 @@
 		8A321800F3430B7D43819262BF71BFEB /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		8A90B3C2E8FFBFEDD78A551E52345E24 /* CAShapeLayerWithHitTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAShapeLayerWithHitTest.m; path = "Source/QuartzCore additions/CAShapeLayerWithHitTest.m"; sourceTree = "<group>"; };
 		8AB5ED115FC099A5E45E523C1D823763 /* SVGKParserDefsAndUse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserDefsAndUse.h; path = "Source/Parsers/Parser Extensions/SVGKParserDefsAndUse.h"; sourceTree = "<group>"; };
+		8AEB2E8CFDE6191098195CAC234A4D0C /* Pods-CountriesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountriesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8AF6DCCBA38860EE1DCF0AED874EA5FB /* NodeList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NodeList+Mutable.h"; path = "Source/DOM classes/Core DOM/NodeList+Mutable.h"; sourceTree = "<group>"; };
 		8B4F7F24F12F0CC02869B66ED5C46DD1 /* SVGElementInstanceList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstanceList.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstanceList.h"; sourceTree = "<group>"; };
-		8BDA9B1BE6F1D25491949F606045532D /* Pods-CountriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8CA5583F497A572DA251D89CC02F709D /* StyleSheetList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StyleSheetList.h; path = "Source/DOM classes/Core DOM/StyleSheetList.h"; sourceTree = "<group>"; };
 		8DBD1C91690820F064CC9D71621ADD9D /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		8F610460A525FD727A8DE0C64B152817 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
@@ -706,21 +819,20 @@
 		95451190D012C4E1CC1C7320C873EC8C /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
 		95883D5E18132151A6510A4A65F54AF8 /* SVGStyleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGStyleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleElement.h"; sourceTree = "<group>"; };
 		96444DDF0437220BEF8DE2E0C41DFE11 /* SVGAnimatedPreserveAspectRatio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGAnimatedPreserveAspectRatio.h; path = "Source/DOM classes/SVG-DOM/SVGAnimatedPreserveAspectRatio.h"; sourceTree = "<group>"; };
+		971DAB07F961564F217563EB042D08C1 /* Pods-Countries-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Countries-acknowledgements.markdown"; sourceTree = "<group>"; };
 		97505AF746F6A913B31F9ADFF3DED090 /* CSSRuleList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSRuleList.m; path = "Source/DOM classes/Core DOM/CSSRuleList.m"; sourceTree = "<group>"; };
 		9779388409B2F7EFA8D7E2BF4D16FBFB /* SVGKPattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKPattern.m; path = Source/Utils/SVGKPattern.m; sourceTree = "<group>"; };
 		97B0DDB4DBDCA7618D84B39864F5F729 /* SVGDocument_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGDocument_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGDocument_Mutable.h"; sourceTree = "<group>"; };
-		97B7FE426BD83BB909F01BA4B98C7CA1 /* Pods-Countries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries.debug.xcconfig"; sourceTree = "<group>"; };
 		980B3D02EDFA309E41F7326B0F6EDFDA /* SVGPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPoint.m; path = "Source/DOM classes/SVG-DOM/SVGPoint.m"; sourceTree = "<group>"; };
 		989A639195EBFD32778910356BE91AAA /* NodeList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NodeList.h; path = "Source/DOM classes/Core DOM/NodeList.h"; sourceTree = "<group>"; };
-		9A3CB682C15A815D865B3A736979A3D1 /* Pods-CountriesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B2F13520BD860B8FD463F28CA4C21A5 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
 		9BCF693C4AE8C40554D5E12266FACCA6 /* SVGGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientElement.h"; sourceTree = "<group>"; };
 		9BE0180DA544C4458557FF5256CD7E95 /* SVGKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKit.m; path = Source/SVGKit.m; sourceTree = "<group>"; };
-		9C0C4F3510A021CA1F26D4F9E80D79B4 /* Pods-Countries-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countries-umbrella.h"; sourceTree = "<group>"; };
 		9C7DE29A9EE935F760A7C87851C39690 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
 		9CE85BCE9F3C8C356C6B3212CF7BBCFB /* SVGCircleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGCircleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGCircleElement.h"; sourceTree = "<group>"; };
 		9D6147BE38FD4692EAD7E9A50854879D /* CALayerWithChildHitTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithChildHitTest.m; path = "Source/QuartzCore additions/CALayerWithChildHitTest.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D8FF950963F06E8FACF5F3DA2819AA1 /* Pods-Countries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E2AB73DB6C24F6324CEF8A4F36612E9 /* SVGKImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImage.m; path = Source/SVGKImage.m; sourceTree = "<group>"; };
 		9F1075350C24F3160B541C20BDB007C9 /* SVGSVGElement_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSVGElement_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGSVGElement_Mutable.h"; sourceTree = "<group>"; };
 		A0CA61FE87537F0B6402F7196C40088A /* CSSRuleList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CSSRuleList+Mutable.h"; path = "Source/DOM classes/Core DOM/CSSRuleList+Mutable.h"; sourceTree = "<group>"; };
@@ -738,7 +850,7 @@
 		A4D5E4078E2BADEB086F3B3A10D76C8A /* Moya.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.xcconfig; sourceTree = "<group>"; };
 		A4F068B0007670D67BCF59814D7B15DA /* ProcessingInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProcessingInstruction.m; path = "Source/DOM classes/Core DOM/ProcessingInstruction.m"; sourceTree = "<group>"; };
 		A5109AC26F5B542E7B181D94CDC80143 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		A5E080C804AE2BE6FDABF1341E6745D2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E080C804AE2BE6FDABF1341E6745D2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67E4752162C0A8564928C914758BDE7 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		A68808B36FD9516F3E7ED07B287C10A2 /* StyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StyleSheet.m; path = "Source/DOM classes/Core DOM/StyleSheet.m"; sourceTree = "<group>"; };
 		A6CE8B30EA4E4B0AC7089148AAF1AABE /* SVGFitToViewBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGFitToViewBox.h; path = "Source/DOM classes/SVG-DOM/SVGFitToViewBox.h"; sourceTree = "<group>"; };
@@ -748,14 +860,13 @@
 		A8FF5E8785F45AF38A2A5A926144B425 /* SVGKExporterNSData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKExporterNSData.h; path = Source/Exporters/SVGKExporterNSData.h; sourceTree = "<group>"; };
 		A927611ADD4DCB1292DAEA635C598F50 /* DOMGlobalSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOMGlobalSettings.h; path = "Source/DOM classes/Core DOM/DOMGlobalSettings.h"; sourceTree = "<group>"; };
 		A9A213D06C8BE484550B27B4B8BC3957 /* Fabric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fabric.xcconfig; sourceTree = "<group>"; };
-		AA27BD52A60126F724EB533F51628EC6 /* Pods-CountriesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CountriesUITests-umbrella.h"; sourceTree = "<group>"; };
 		ABA286E0B1C3CF7F9852D238A319CC10 /* CAShapeLayerWithClipRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAShapeLayerWithClipRender.h; path = "Source/QuartzCore additions/CAShapeLayerWithClipRender.h"; sourceTree = "<group>"; };
 		AC1B0808892078D6B8E44CD29FC576BF /* SVGRect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGRect.h; path = "Source/DOM classes/SVG-DOM/SVGRect.h"; sourceTree = "<group>"; };
 		AC66FB7F0D86026D2DC484BEB7C51044 /* CALayer+RecursiveClone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+RecursiveClone.h"; path = "Source/QuartzCore additions/CALayer+RecursiveClone.h"; sourceTree = "<group>"; };
 		AC6EA9DBE6512768697E68B0B5581F06 /* SVGStyleCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGStyleCatcher.h; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleCatcher.h"; sourceTree = "<group>"; };
+		AC8F1B05ECF889727201E4898824A5AC /* Pods-CountriesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD0E24BB74F2E2B153D8B271CF36CFD8 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
 		AD2609D08208FCB9146DC7EF50A1F76C /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		AD283D564C0A44327E116785645258A7 /* Pods-CountriesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesTests-Info.plist"; sourceTree = "<group>"; };
 		AD57F221BE4A61BAE3FFD7D197BDDC78 /* SVGNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGNumber.h; path = "Source/DOM classes/SVG-DOM/SVGNumber.h"; sourceTree = "<group>"; };
 		AE6D089E0012D013E37995F6F24FA931 /* CSSPrimitiveValue_ConfigurablePixelsPerInch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSPrimitiveValue_ConfigurablePixelsPerInch.h; path = "Source/DOM classes/Core DOM/CSSPrimitiveValue_ConfigurablePixelsPerInch.h"; sourceTree = "<group>"; };
 		AEAE7CEFA1FB378410D8397528241A63 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
@@ -763,14 +874,15 @@
 		B0459D637E7C8FEA41F5029183F88590 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		B2A7E05F70CE53A60C559AB0065DC77D /* SVGKSourceNSData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceNSData.h; path = Source/Sources/SVGKSourceNSData.h; sourceTree = "<group>"; };
 		B2C540150CCFEAB199B77FE486D8D99A /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
-		B2D1C83AFB772E15731BB555FB2C2816 /* SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D1C83AFB772E15731BB555FB2C2816 /* SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVGKit.framework; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E21AA3DBF31F85E991477DCD1950D1 /* CSSRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSRule.h; path = "Source/DOM classes/Core DOM/CSSRule.h"; sourceTree = "<group>"; };
 		B3D39EE8EAC2D31F179D06F483716480 /* SVGStyleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGStyleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleElement.m"; sourceTree = "<group>"; };
+		B3FE718BF501D2B7984A9EB8333F6A34 /* Pods-CountriesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CountriesTests-frameworks.sh"; sourceTree = "<group>"; };
 		B528DF984E8DA7BB0144E898625DF473 /* SVGTitleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTitleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.h"; sourceTree = "<group>"; };
-		B62D9795DE9B62F6AB4112B62F8B8516 /* Pods-CountriesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountriesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6B9AF5482D69303D18D5A29E970A8E5 /* SVGTextPositioningElement_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextPositioningElement_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGTextPositioningElement_Mutable.h"; sourceTree = "<group>"; };
 		B6C411C90DE4D5C5720B2D4B4C00057A /* SVGKLayeredImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKLayeredImageView.h; path = "Source/UIKit additions/SVGKLayeredImageView.h"; sourceTree = "<group>"; };
 		B6F4B33AF607DA82F31012BCD2E17077 /* NSCharacterSet+SVGKExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCharacterSet+SVGKExtensions.h"; path = "Source/Foundation additions/NSCharacterSet+SVGKExtensions.h"; sourceTree = "<group>"; };
+		B8451BBA4F4D8781F8C023C88C0794CC /* Pods-CountriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8CA1031B0078C869EB763299E4FEB55 /* SVGClipPathElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGClipPathElement.h; path = "Source/DOM classes/SVG-DOM/SVGClipPathElement.h"; sourceTree = "<group>"; };
 		B9343A4E42E2E4D2715450F4EC0693E1 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
 		B9AB0B1DE54513E11BC132E95CCFFBD0 /* SVGKLayeredImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKLayeredImageView.m; path = "Source/UIKit additions/SVGKLayeredImageView.m"; sourceTree = "<group>"; };
@@ -783,7 +895,6 @@
 		BDB1DC0C012F0C36A78EA3132145CE36 /* SVGKParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParser.m; path = Source/Parsers/SVGKParser.m; sourceTree = "<group>"; };
 		BEC91F404E0F7FF4A57DC8A60158BAD1 /* CSSRuleList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSRuleList.h; path = "Source/DOM classes/Core DOM/CSSRuleList.h"; sourceTree = "<group>"; };
 		BF1CB82E6733125574634D19EA571126 /* SVGRectElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGRectElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGRectElement.m"; sourceTree = "<group>"; };
-		C125D6F1D3722A646EC6D47D44899823 /* Pods-CountriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C138C1972779F2A11B805048420ADF8B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		C2983F14FC692C98DA26A33ABBD357C8 /* Node+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Node+Mutable.h"; path = "Source/DOM classes/Core DOM/Node+Mutable.h"; sourceTree = "<group>"; };
 		C31E523769EE773545E37776DFA038B1 /* Text.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Text.m; path = "Source/DOM classes/Core DOM/Text.m"; sourceTree = "<group>"; };
@@ -802,7 +913,6 @@
 		CB018017B690F16479EB52775BABED93 /* Node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Node.h; path = "Source/DOM classes/Core DOM/Node.h"; sourceTree = "<group>"; };
 		CBD467D12589A1B30C19840018A6B7DE /* SVGClipPathElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGClipPathElement.m; path = "Source/DOM classes/SVG-DOM/SVGClipPathElement.m"; sourceTree = "<group>"; };
 		CC668B334B6D10882FA2EF6AD185365C /* StyleSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StyleSheet.h; path = "Source/DOM classes/Core DOM/StyleSheet.h"; sourceTree = "<group>"; };
-		CC81338AE876422B7B476C5658FA78F8 /* Pods-Countries.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Countries.modulemap"; sourceTree = "<group>"; };
 		CD1F2D545C6FD5480DE99B002151E468 /* BaseClassForAllSVGBasicShapes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseClassForAllSVGBasicShapes.m; path = "Source/DOM classes/Unported or Partial DOM/BaseClassForAllSVGBasicShapes.m"; sourceTree = "<group>"; };
 		CD2985F81295DC555EC6596D4CB9A123 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
 		CDE4555FECD8080899664696E12B2BD5 /* DocumentFragment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentFragment.h; path = "Source/DOM classes/Core DOM/DocumentFragment.h"; sourceTree = "<group>"; };
@@ -811,7 +921,6 @@
 		CE9F41D473AC0A30050826EC985B691A /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Classes/CLI/CLIColor.h; sourceTree = "<group>"; };
 		CF417177FCA8656EB73F4D2C335ED901 /* NSCharacterSet+SVGKExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCharacterSet+SVGKExtensions.m"; path = "Source/Foundation additions/NSCharacterSet+SVGKExtensions.m"; sourceTree = "<group>"; };
 		D0F0C10D1A3E1AA5946BD1D6C53835AE /* Text.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Text.h; path = "Source/DOM classes/Core DOM/Text.h"; sourceTree = "<group>"; };
-		D21DCFA37B85FDA8E46C69547A77CFBE /* Pods-CountriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D230637BBD93F309A664A318E7CEB984 /* SVGSVGElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSVGElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGSVGElement.h"; sourceTree = "<group>"; };
 		D46A220D061ACFE76BC40B68736D4234 /* SVGDefsElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDefsElement.m; path = "Source/DOM classes/SVG-DOM/SVGDefsElement.m"; sourceTree = "<group>"; };
 		D58D2DE218F84D28E46E3990B25B79E6 /* AccessTokenPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenPlugin.swift; path = Sources/Moya/Plugins/AccessTokenPlugin.swift; sourceTree = "<group>"; };
@@ -820,12 +929,15 @@
 		D6658272614205CDBF78D5DB23CFCBF8 /* SVGKExporterUIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKExporterUIImage.h; path = Source/Exporters/SVGKExporterUIImage.h; sourceTree = "<group>"; };
 		D8CF4779BA36CD12940AB7106C694AB8 /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Encoding.swift"; path = "Sources/Moya/URLRequest+Encoding.swift"; sourceTree = "<group>"; };
 		D94338075BCCCA9F0D753B751A7E94A7 /* SVGLinearGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLinearGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.m"; sourceTree = "<group>"; };
+		D94843F37FEE45C154B4A20CEDECF706 /* Pods-CountriesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CountriesTests.modulemap"; sourceTree = "<group>"; };
 		D99B023484935E819B90D9246478BFDA /* CDATASection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDATASection.m; path = "Source/DOM classes/Core DOM/CDATASection.m"; sourceTree = "<group>"; };
+		D9E916DA5E449BEFB871736FF345BA8E /* Pods-Countries-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-acknowledgements.plist"; sourceTree = "<group>"; };
 		D9FAADDD4057ABAE7D541EC08BCDA673 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
 		DA090B4C3E21358B2F6694C84ABBCE1D /* CALayerWithChildHitTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CALayerWithChildHitTest.h; path = "Source/QuartzCore additions/CALayerWithChildHitTest.h"; sourceTree = "<group>"; };
 		DACC94B7905085CE8575820347716D03 /* SVGUseElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUseElement.h; path = "Source/DOM classes/SVG-DOM/SVGUseElement.h"; sourceTree = "<group>"; };
 		DB114708900608834E5A400EEE8BFC8B /* StyleSheetList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StyleSheetList+Mutable.h"; path = "Source/DOM classes/Core DOM/StyleSheetList+Mutable.h"; sourceTree = "<group>"; };
 		DB3A46906D3AAA8FC4F5AA1E46C0AAA9 /* Document+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Document+Mutable.h"; path = "Source/DOM classes/Core DOM/Document+Mutable.h"; sourceTree = "<group>"; };
+		DC7DBADFBBE975556BA2B361AC76B127 /* Pods-CountriesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountriesTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DCA6458380CCB9F45D2E3CF08903B3A1 /* SVGStylable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGStylable.h; path = "Source/DOM classes/SVG-DOM/SVGStylable.h"; sourceTree = "<group>"; };
 		DD0F02A0CF71D83FD5CAA0A0821DA00A /* MoyaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaError.swift; path = Sources/Moya/MoyaError.swift; sourceTree = "<group>"; };
 		DE50DEA3508435AABEE6BFA532FFA3F1 /* Plugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = Sources/Moya/Plugin.swift; sourceTree = "<group>"; };
@@ -834,7 +946,6 @@
 		E0BEED74D7E665A0BD71161DC175549B /* SVGLineElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLineElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLineElement.h"; sourceTree = "<group>"; };
 		E19849C693109E3DA4040D33D37384CB /* SVGKParserDefsAndUse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserDefsAndUse.m; path = "Source/Parsers/Parser Extensions/SVGKParserDefsAndUse.m"; sourceTree = "<group>"; };
 		E27F2EF7BEA32A6CB5ED1DC7ECFC8190 /* SVGLineElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLineElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLineElement.m"; sourceTree = "<group>"; };
-		E2D2AE03BA99C7748242B1231E2E778E /* Pods-Countries-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countries-dummy.m"; sourceTree = "<group>"; };
 		E36A019D83D0EB4F8C80ECDF38D5A1CC /* SVGKSourceLocalFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceLocalFile.m; path = Source/Sources/SVGKSourceLocalFile.m; sourceTree = "<group>"; };
 		E44F1353344FB5644C9D0021282B95FF /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
 		E4AA11317677C44D3528AE7F1276B5B6 /* SVGKLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKLayer.m; path = "Source/QuartzCore additions/SVGKLayer.m"; sourceTree = "<group>"; };
@@ -851,10 +962,11 @@
 		E93EF39E194C36AFD5264D1E81ED421C /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
 		EA2B840A7644B0856EB97E0D86AC3844 /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Moya/Endpoint.swift; sourceTree = "<group>"; };
 		EA405D139FEFF40AF4288873D3F93577 /* Crashlytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Crashlytics.xcconfig; sourceTree = "<group>"; };
-		EBE34BD3F8301DC59403ADF691745148 /* Pods-CountriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC507E4458A033956E52A8F054749635 /* SVGKImage+CGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SVGKImage+CGContext.h"; path = "Source/Exporters/SVGKImage+CGContext.h"; sourceTree = "<group>"; };
 		ECA8688C1FFF38A1232B9442D531FC7E /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
 		ECD97B80864B96FE3E86BBE3BCDAC77B /* SVGGroupElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGroupElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGroupElement.m"; sourceTree = "<group>"; };
+		ED2488D7B7ED12FE3A78E8EF2D91CB36 /* Pods-CountriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDFB397C272DA4E2625573F91D54353E /* Pods-CountriesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CountriesUITests-umbrella.h"; sourceTree = "<group>"; };
 		EF9AA704A3835FC1ACA37B2F3BDEEF72 /* NamedNodeMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NamedNodeMap.m; path = "Source/DOM classes/Core DOM/NamedNodeMap.m"; sourceTree = "<group>"; };
 		F01A5AF88EF777876A314D7003D3C944 /* SVGKFastImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKFastImageView.h; path = "Source/UIKit additions/SVGKFastImageView.h"; sourceTree = "<group>"; };
 		F1F8D40AF8359AEDF871F18B5842B728 /* Moya-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-umbrella.h"; sourceTree = "<group>"; };
@@ -866,10 +978,10 @@
 		F5C7E5D9A3F253C19C553FD0085FE016 /* ValidationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationType.swift; path = Sources/Moya/ValidationType.swift; sourceTree = "<group>"; };
 		F5ED695572898BCA1B5B520165CD090C /* CGPathAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGPathAdditions.h; path = "Source/QuartzCore additions/CGPathAdditions.h"; sourceTree = "<group>"; };
 		F70275DAB7F943A3BCA58D4088EDB986 /* SVGKSourceURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceURL.h; path = Source/Sources/SVGKSourceURL.h; sourceTree = "<group>"; };
+		F7BD7718F1C031256EC2633B4F151E61 /* Pods-CountriesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CountriesUITests.modulemap"; sourceTree = "<group>"; };
 		F8836E1ED5F0E217727B3313F78F995C /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
-		F8EF16A489DC5C223D560A8DE6631D1F /* Pods-Countries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries.release.xcconfig"; sourceTree = "<group>"; };
+		F8C3BFA559DB8B90CB63F090DCCC839C /* Pods-Countries-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Countries-frameworks.sh"; sourceTree = "<group>"; };
 		FAB059B937D396F039164E809F8BBA94 /* SVGKImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKImage.h; path = Source/SVGKImage.h; sourceTree = "<group>"; };
-		FAC23D39EDB58B7FF00D2D7405C967CF /* Pods-Countries-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Countries-frameworks.sh"; sourceTree = "<group>"; };
 		FBD8C0475CA53265EEBE40276598C628 /* CALayerWithClipRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithClipRender.m; path = "Source/QuartzCore additions/CALayerWithClipRender.m"; sourceTree = "<group>"; };
 		FDAA568145529579A3B12226AA94AC51 /* Moya+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Moya+Alamofire.swift"; path = "Sources/Moya/Moya+Alamofire.swift"; sourceTree = "<group>"; };
 		FE8DF6F7BD82BE2F9A751CBCA7BA8E2C /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
@@ -888,11 +1000,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		326992331BA7619C8624C372B69F1656 /* Frameworks */ = {
+		1C4D74770BA65F8EC2CC699656F5962B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9F445F8432F82986F6992B067DC5B5 /* Foundation.framework in Frameworks */,
+				1C71FB9A4D2DB36492104D0C789A4D5D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,14 +1023,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27704C3C471F8DC8831A09019A443B0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69ED9BBC1BF3FD66C12AA41DC6378EA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE274EE67B0BC74F9518E12F190CCAEA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,15 +1060,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC01C99C44414174E2E16E8A46E98915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B374DB393D7442238250AC2F690E52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EFDB45F564B7509755AE4D35D1E4A43 /* Pods-CountriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7BD7718F1C031256EC2633B4F151E61 /* Pods-CountriesUITests.modulemap */,
+				8AEB2E8CFDE6191098195CAC234A4D0C /* Pods-CountriesUITests-acknowledgements.markdown */,
+				AC8F1B05ECF889727201E4898824A5AC /* Pods-CountriesUITests-acknowledgements.plist */,
+				19FD352A663EBD8DFE180FFC9B262551 /* Pods-CountriesUITests-dummy.m */,
+				1E9383DF2C33E57349BC355F5629ABDB /* Pods-CountriesUITests-frameworks.sh */,
+				28288BEF5EF2138B0CF8F9D7558B5495 /* Pods-CountriesUITests-Info.plist */,
+				EDFB397C272DA4E2625573F91D54353E /* Pods-CountriesUITests-umbrella.h */,
+				68A99A5F58C4FC5135836968B002C388 /* Pods-CountriesUITests.debug.xcconfig */,
+				54DE2DCC39E7B120497120C7AD7A888C /* Pods-CountriesUITests.release.xcconfig */,
+			);
+			name = "Pods-CountriesUITests";
+			path = "Target Support Files/Pods-CountriesUITests";
+			sourceTree = "<group>";
+		};
+		11538431A4322CC72CF45BC18E1F4EF6 /* Pods-CountriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D94843F37FEE45C154B4A20CEDECF706 /* Pods-CountriesTests.modulemap */,
+				43E011A4F6B288A8AD01233847786026 /* Pods-CountriesTests-acknowledgements.markdown */,
+				DC7DBADFBBE975556BA2B361AC76B127 /* Pods-CountriesTests-acknowledgements.plist */,
+				815450124BF4993B1D562AB371753329 /* Pods-CountriesTests-dummy.m */,
+				B3FE718BF501D2B7984A9EB8333F6A34 /* Pods-CountriesTests-frameworks.sh */,
+				24B194C2BFD78A43822A524115FCC999 /* Pods-CountriesTests-Info.plist */,
+				4BA7AA70CF0662F141D5D8B23AB7A886 /* Pods-CountriesTests-umbrella.h */,
+				B8451BBA4F4D8781F8C023C88C0794CC /* Pods-CountriesTests.debug.xcconfig */,
+				ED2488D7B7ED12FE3A78E8EF2D91CB36 /* Pods-CountriesTests.release.xcconfig */,
+			);
+			name = "Pods-CountriesTests";
+			path = "Target Support Files/Pods-CountriesTests";
+			sourceTree = "<group>";
+		};
 		15F82264D536B176DC2BCED3A3FA1C98 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
 				646E90D52AAA58DA55E14E1558424D43 /* Core */,
 				861EC5ECDB8FD1DFF692AE73B53400EF /* Support Files */,
 			);
+			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -990,6 +1137,7 @@
 				4E5E8594D93662BB2EFF3A406C0A6167 /* MBProgressHUD.m */,
 				54FCD4B8939A6D10B326E8A9F08FF3B7 /* Support Files */,
 			);
+			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1022,6 +1170,7 @@
 				A0BA834E69701661B89B2B2879F8DC50 /* Core */,
 				E6B2299ACD7E5B698FCE70633673F692 /* Support Files */,
 			);
+			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -1034,6 +1183,7 @@
 				E5A7D8530AC7F09E1DA11443120E8881 /* ResultProtocol.swift */,
 				7337591F1446188AE04539DFABFC2BE1 /* Support Files */,
 			);
+			name = Result;
 			path = Result;
 			sourceTree = "<group>";
 		};
@@ -1059,6 +1209,7 @@
 				BA42C68B7AFE25D6D35FFB83A7E7B49F /* Validation.swift */,
 				31870908BEFCED47EB345AD6EAE59094 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1218,18 +1369,18 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		A452AFBCA5248A1869D7B7A83E4FA39B /* Pods-Countries */ = {
+		B0796964FA3C409F329810E81541BBE6 /* Pods-Countries */ = {
 			isa = PBXGroup;
 			children = (
-				CC81338AE876422B7B476C5658FA78F8 /* Pods-Countries.modulemap */,
-				34F13AA04FC676A558DD866A37C6F511 /* Pods-Countries-acknowledgements.markdown */,
-				011233285FAAD46473CF5DA8447D7F7C /* Pods-Countries-acknowledgements.plist */,
-				E2D2AE03BA99C7748242B1231E2E778E /* Pods-Countries-dummy.m */,
-				FAC23D39EDB58B7FF00D2D7405C967CF /* Pods-Countries-frameworks.sh */,
-				7E8E71AF15237F61CF091C530A108350 /* Pods-Countries-Info.plist */,
-				9C0C4F3510A021CA1F26D4F9E80D79B4 /* Pods-Countries-umbrella.h */,
-				97B7FE426BD83BB909F01BA4B98C7CA1 /* Pods-Countries.debug.xcconfig */,
-				F8EF16A489DC5C223D560A8DE6631D1F /* Pods-Countries.release.xcconfig */,
+				266C15F756FD8289C7F371E79F56B307 /* Pods-Countries.modulemap */,
+				971DAB07F961564F217563EB042D08C1 /* Pods-Countries-acknowledgements.markdown */,
+				D9E916DA5E449BEFB871736FF345BA8E /* Pods-Countries-acknowledgements.plist */,
+				281BEB96EB2AA87B204D2F23B5492D74 /* Pods-Countries-dummy.m */,
+				F8C3BFA559DB8B90CB63F090DCCC839C /* Pods-Countries-frameworks.sh */,
+				64BF567FC776EC03152A741D609C47C6 /* Pods-Countries-Info.plist */,
+				512D9BDA30A295FF47374E9E89F11222 /* Pods-Countries-umbrella.h */,
+				9D8FF950963F06E8FACF5F3DA2819AA1 /* Pods-Countries.debug.xcconfig */,
+				2EC7415BC0EC5B228E532545AE9F2EDD /* Pods-Countries.release.xcconfig */,
 			);
 			name = "Pods-Countries";
 			path = "Target Support Files/Pods-Countries";
@@ -1243,23 +1394,8 @@
 				C4822672A662A3BB9EE3ACB6D94A17EB /* Frameworks */,
 				F2A4ADBF5854704D6DC39CE89F246767 /* Support Files */,
 			);
+			name = Fabric;
 			path = Fabric;
-			sourceTree = "<group>";
-		};
-		B5EEEF44EB790A99866436EF7B839AB6 /* Pods-CountriesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				449DBD732B48548C954645580D063659 /* Pods-CountriesUITests.modulemap */,
-				B62D9795DE9B62F6AB4112B62F8B8516 /* Pods-CountriesUITests-acknowledgements.markdown */,
-				9A3CB682C15A815D865B3A736979A3D1 /* Pods-CountriesUITests-acknowledgements.plist */,
-				765DF179956180C8945D6017767AB55F /* Pods-CountriesUITests-dummy.m */,
-				210DAA1D11B656B342AAB268035CD9C6 /* Pods-CountriesUITests-Info.plist */,
-				AA27BD52A60126F724EB533F51628EC6 /* Pods-CountriesUITests-umbrella.h */,
-				C125D6F1D3722A646EC6D47D44899823 /* Pods-CountriesUITests.debug.xcconfig */,
-				8BDA9B1BE6F1D25491949F606045532D /* Pods-CountriesUITests.release.xcconfig */,
-			);
-			name = "Pods-CountriesUITests";
-			path = "Target Support Files/Pods-CountriesUITests";
 			sourceTree = "<group>";
 		};
 		C3B8012C7375478AF2713CFF98C7F723 /* SVGKit */ = {
@@ -1498,6 +1634,7 @@
 				58C4BFB1742345F806D7D15B22A472F6 /* TinySVGTextAreaElement.m */,
 				C54569601AD4888C0BF9D4C6A9662129 /* Support Files */,
 			);
+			name = SVGKit;
 			path = SVGKit;
 			sourceTree = "<group>";
 		};
@@ -1522,16 +1659,6 @@
 			path = "../Target Support Files/SVGKit";
 			sourceTree = "<group>";
 		};
-		CEEAE7BD304E404ACEE4DA5F8A803654 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A452AFBCA5248A1869D7B7A83E4FA39B /* Pods-Countries */,
-				E454020268C3DE9FE0D7398C214FAC9D /* Pods-CountriesTests */,
-				B5EEEF44EB790A99866436EF7B839AB6 /* Pods-CountriesUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -1539,24 +1666,8 @@
 				88FDDFD98D1CE30D33F03B0DF3D3D5F8 /* Frameworks */,
 				197C88965F6A846ECC2BEC5D71FBCABB /* Pods */,
 				612DC77E324BA0D2A8446F6630EA8DEE /* Products */,
-				CEEAE7BD304E404ACEE4DA5F8A803654 /* Targets Support Files */,
+				FF15A277C3222BE0564CF6C191CA1E5F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E454020268C3DE9FE0D7398C214FAC9D /* Pods-CountriesTests */ = {
-			isa = PBXGroup;
-			children = (
-				31DA4951167D4C72E3F4CC1776869594 /* Pods-CountriesTests.modulemap */,
-				49A06DBD718D3847D21383E4ACCCA885 /* Pods-CountriesTests-acknowledgements.markdown */,
-				08263212C69805BB34B79CA5927CC721 /* Pods-CountriesTests-acknowledgements.plist */,
-				7C348D7C548125A08F5EDF6447218820 /* Pods-CountriesTests-dummy.m */,
-				AD283D564C0A44327E116785645258A7 /* Pods-CountriesTests-Info.plist */,
-				6EE766E29E46991CC3564F0A77C37FEC /* Pods-CountriesTests-umbrella.h */,
-				D21DCFA37B85FDA8E46C69547A77CFBE /* Pods-CountriesTests.debug.xcconfig */,
-				EBE34BD3F8301DC59403ADF691745148 /* Pods-CountriesTests.release.xcconfig */,
-			);
-			name = "Pods-CountriesTests";
-			path = "Target Support Files/Pods-CountriesTests";
 			sourceTree = "<group>";
 		};
 		E6393D5E079EFF10A55AADBF60F39ECE /* Crashlytics */ = {
@@ -1572,6 +1683,7 @@
 				9C79F572688D7435C41F2CCEFF127734 /* Frameworks */,
 				2E989A45A3AD16EBBD70B27108B9D6D1 /* Support Files */,
 			);
+			name = Crashlytics;
 			path = Crashlytics;
 			sourceTree = "<group>";
 		};
@@ -1598,9 +1710,27 @@
 			path = "../Target Support Files/Fabric";
 			sourceTree = "<group>";
 		};
+		FF15A277C3222BE0564CF6C191CA1E5F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0796964FA3C409F329810E81541BBE6 /* Pods-Countries */,
+				11538431A4322CC72CF45BC18E1F4EF6 /* Pods-CountriesTests */,
+				0EFDB45F564B7509755AE4D35D1E4A43 /* Pods-CountriesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0F6AEFA70F691D2837603D2C866532EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E57CDEB3A7DF474FAF62BE4D2EF58F7 /* Pods-CountriesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1609,11 +1739,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FEBE5CF72709C9D59E73C2B79531A6E /* Headers */ = {
+		35F2D17FD25A9A7FF6850AE9FCF4E987 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FA76AAAC06B196116C6B86EC446A6A /* Pods-CountriesUITests-umbrella.h in Headers */,
+				1167A9B00EF5940A9A7777E29D432EA3 /* Pods-CountriesUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1649,14 +1779,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BEFFCD672FD28B3D77927E392412FB9 /* Result-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		813C82551B6B2668FBA2CA2B5CB6486C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBB293D752ACD4066778FC92A03AE6F1 /* Pods-CountriesTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1879,25 +2001,6 @@
 			productReference = 0C86FD25939D84E00CD75B7478747306 /* Result.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		66C53245EC394881A74EBFFABF647179 /* Pods-CountriesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66F443B090386BA262E6B0A06FDE7640 /* Build configuration list for PBXNativeTarget "Pods-CountriesTests" */;
-			buildPhases = (
-				813C82551B6B2668FBA2CA2B5CB6486C /* Headers */,
-				3AD6351EA10EF63819B094C532E8981C /* Sources */,
-				326992331BA7619C8624C372B69F1656 /* Frameworks */,
-				55F8F39EED6B4B540B3DFC048C056A12 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64B1FD6FD8D4B1C0C3BFD807886448F3 /* PBXTargetDependency */,
-			);
-			name = "Pods-CountriesTests";
-			productName = "Pods-CountriesTests";
-			productReference = 2BC6F97D875496D3666210711541AC53 /* Pods_CountriesTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		7022FE77DF3DEA8B5687543E6BB43819 /* SVGKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 137BFAB6712AEE3B437FE4132CCB3104 /* Build configuration list for PBXNativeTarget "SVGKit" */;
@@ -1935,25 +2038,6 @@
 			productReference = 2B1B508FD299314507830FCC138B402B /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8C0EB701B57599B4ED59BD6BB2B2277E /* Pods-CountriesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8BC9910B0A43C82E9D0C52B2A293FC6 /* Build configuration list for PBXNativeTarget "Pods-CountriesUITests" */;
-			buildPhases = (
-				2FEBE5CF72709C9D59E73C2B79531A6E /* Headers */,
-				22CDA4BB7BD8B6987C565DE6CEAFAF9A /* Sources */,
-				69ED9BBC1BF3FD66C12AA41DC6378EA5 /* Frameworks */,
-				3C9B2D13DD9F9ACB2FB105000F2334EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1CADFC3E9A9211F37EE9928D38C11587 /* PBXTargetDependency */,
-			);
-			name = "Pods-CountriesUITests";
-			productName = "Pods-CountriesUITests";
-			productReference = 2BC6BC3A934C16CD6AAC30183741EC9D /* Pods_CountriesUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		BAAB01D1BA82ABAE2B535579B77ED0CB /* Moya */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E494A7493F9AB9FE36E8AF4802FA6F /* Build configuration list for PBXNativeTarget "Moya" */;
@@ -1972,6 +2056,60 @@
 			name = Moya;
 			productName = Moya;
 			productReference = 6D5969A4E058CD01A88EB72FA94DF42C /* Moya.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF9D57819EFB50AED3662E263DE7D941 /* Pods-CountriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35669F9C600B645B7CA7CD1EB10D44EC /* Build configuration list for PBXNativeTarget "Pods-CountriesTests" */;
+			buildPhases = (
+				0F6AEFA70F691D2837603D2C866532EC /* Headers */,
+				7DD147C43EA3EB212070F843FA6991CE /* Sources */,
+				FC01C99C44414174E2E16E8A46E98915 /* Frameworks */,
+				5F59C1563266B13DFE8751C6B4160431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9192F5E1C304C5691828520C820283C /* PBXTargetDependency */,
+				52219171506E91A0C352FE6F1C3715DF /* PBXTargetDependency */,
+				2023160BF5284CB7C879A78B6765E921 /* PBXTargetDependency */,
+				9003C9B2CAA4878FB9586B062BDBE81C /* PBXTargetDependency */,
+				B642502500185706E0DB965AE0B1D255 /* PBXTargetDependency */,
+				DB7A4D43880B36D6FDBA138238B9CF48 /* PBXTargetDependency */,
+				1C1D4C8928EA977F22EF36CC55F72FA9 /* PBXTargetDependency */,
+				C4C542FBE1500F137AA7E3A7C1869B04 /* PBXTargetDependency */,
+				BB46D89F0401F934FAE91B70B2E2DD29 /* PBXTargetDependency */,
+			);
+			name = "Pods-CountriesTests";
+			productName = "Pods-CountriesTests";
+			productReference = 2BC6F97D875496D3666210711541AC53 /* Pods_CountriesTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E02AEEC6422E5269C6135CA3A490ADCB /* Pods-CountriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70AF48BDBB3CB803A607724C42014C9 /* Build configuration list for PBXNativeTarget "Pods-CountriesUITests" */;
+			buildPhases = (
+				35F2D17FD25A9A7FF6850AE9FCF4E987 /* Headers */,
+				00818F20117D01C33F354315113D71F8 /* Sources */,
+				1C4D74770BA65F8EC2CC699656F5962B /* Frameworks */,
+				38335AD08C79BA91B28A0C175E5119A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				277AFEBBA9985B308FDC46D423C11E36 /* PBXTargetDependency */,
+				35872DA5627149465D02B38B281C4C5F /* PBXTargetDependency */,
+				105222C8FF9F220EF6576760070B7855 /* PBXTargetDependency */,
+				AC3E7E94F0B01EA2C4F602A4FF660C78 /* PBXTargetDependency */,
+				C5B36D5780C14A47B44AD59D8487779C /* PBXTargetDependency */,
+				C1A0BBF49C73CF1AE49C20793D617F72 /* PBXTargetDependency */,
+				D532C5B2555E9FBBA025DF010C69686D /* PBXTargetDependency */,
+				81D8A488D5E6B13CE02EFD91A01ACB8C /* PBXTargetDependency */,
+				75CE013DA113B0D0EE869908C01363EF /* PBXTargetDependency */,
+			);
+			name = "Pods-CountriesUITests";
+			productName = "Pods-CountriesUITests";
+			productReference = 2BC6BC3A934C16CD6AAC30183741EC9D /* Pods_CountriesUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E30C2087E8E99285E7A2A0CF39B488AA /* Pods-Countries */ = {
@@ -2028,8 +2166,8 @@
 				73D907A2182514188BFA198DB79AA3CA /* MBProgressHUD */,
 				BAAB01D1BA82ABAE2B535579B77ED0CB /* Moya */,
 				E30C2087E8E99285E7A2A0CF39B488AA /* Pods-Countries */,
-				66C53245EC394881A74EBFFABF647179 /* Pods-CountriesTests */,
-				8C0EB701B57599B4ED59BD6BB2B2277E /* Pods-CountriesUITests */,
+				DF9D57819EFB50AED3662E263DE7D941 /* Pods-CountriesTests */,
+				E02AEEC6422E5269C6135CA3A490ADCB /* Pods-CountriesUITests */,
 				4B0183450F95394DC0C49E326A20B42D /* Result */,
 				7022FE77DF3DEA8B5687543E6BB43819 /* SVGKit */,
 			);
@@ -2058,7 +2196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C9B2D13DD9F9ACB2FB105000F2334EB /* Resources */ = {
+		38335AD08C79BA91B28A0C175E5119A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2072,7 +2210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55F8F39EED6B4B540B3DFC048C056A12 /* Resources */ = {
+		5F59C1563266B13DFE8751C6B4160431 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2103,19 +2241,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22CDA4BB7BD8B6987C565DE6CEAFAF9A /* Sources */ = {
+		00818F20117D01C33F354315113D71F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5172689DE9D3153FC090CBD977F244B /* Pods-CountriesUITests-dummy.m in Sources */,
+				76F6222B798859CA2D0FDF77273C5B5A /* Pods-CountriesUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AD6351EA10EF63819B094C532E8981C /* Sources */ = {
+		7DD147C43EA3EB212070F843FA6991CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408C823FCF24088BA68E34BD0F3B038C /* Pods-CountriesTests-dummy.m in Sources */,
+				467E5562DBC41A481A39EB98E5B3E9BF /* Pods-CountriesTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2342,11 +2480,35 @@
 			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
 			targetProxy = 89B7C1F59BE279B9AC2C2AEA832F837B /* PBXContainerItemProxy */;
 		};
-		1CADFC3E9A9211F37EE9928D38C11587 /* PBXTargetDependency */ = {
+		105222C8FF9F220EF6576760070B7855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Crashlytics;
+			target = ABA9A411BB5A359862E5F1AA6238278E /* Crashlytics */;
+			targetProxy = B32067D66E045192ECB58091087F9B69 /* PBXContainerItemProxy */;
+		};
+		1C1D4C8928EA977F22EF36CC55F72FA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Countries";
 			target = E30C2087E8E99285E7A2A0CF39B488AA /* Pods-Countries */;
-			targetProxy = 828AD9012DE644FD5D9CCAF3C71D4A12 /* PBXContainerItemProxy */;
+			targetProxy = 119B3C73520E19BF1AA68BEF1FFF47D2 /* PBXContainerItemProxy */;
+		};
+		2023160BF5284CB7C879A78B6765E921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Crashlytics;
+			target = ABA9A411BB5A359862E5F1AA6238278E /* Crashlytics */;
+			targetProxy = 60B9BD6122ED18249C7CDF891C8CDA54 /* PBXContainerItemProxy */;
+		};
+		277AFEBBA9985B308FDC46D423C11E36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
+			targetProxy = C895429DF1E80EE395222ACD6E17BA49 /* PBXContainerItemProxy */;
+		};
+		35872DA5627149465D02B38B281C4C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = 005D2CE47851CEF966828826F979CC7E /* CocoaLumberjack */;
+			targetProxy = 4B398CF15408E2935B2AC8F7158DDD2F /* PBXContainerItemProxy */;
 		};
 		42319071B6B7CD0BBA7B3903A4C79EF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2360,11 +2522,17 @@
 			target = 7022FE77DF3DEA8B5687543E6BB43819 /* SVGKit */;
 			targetProxy = 32FE2C07A53CE757E7F8B758211B3FEC /* PBXContainerItemProxy */;
 		};
-		64B1FD6FD8D4B1C0C3BFD807886448F3 /* PBXTargetDependency */ = {
+		52219171506E91A0C352FE6F1C3715DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Countries";
-			target = E30C2087E8E99285E7A2A0CF39B488AA /* Pods-Countries */;
-			targetProxy = 0A049226E58072199422DDC300DE726E /* PBXContainerItemProxy */;
+			name = CocoaLumberjack;
+			target = 005D2CE47851CEF966828826F979CC7E /* CocoaLumberjack */;
+			targetProxy = C7C0D3F5B9EB6580E1417EC813F847AD /* PBXContainerItemProxy */;
+		};
+		75CE013DA113B0D0EE869908C01363EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVGKit;
+			target = 7022FE77DF3DEA8B5687543E6BB43819 /* SVGKit */;
+			targetProxy = EB76E3D7581C2FC0DD5E6AC2EC2DC8A1 /* PBXContainerItemProxy */;
 		};
 		7E3DAD52352B0DE81143EFF7E1C7503A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2372,17 +2540,53 @@
 			target = 005D2CE47851CEF966828826F979CC7E /* CocoaLumberjack */;
 			targetProxy = 95F80E7390A5F8AFC399036178C41FBE /* PBXContainerItemProxy */;
 		};
+		81D8A488D5E6B13CE02EFD91A01ACB8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 4B0183450F95394DC0C49E326A20B42D /* Result */;
+			targetProxy = 2824B2F58B6CC3FEFBDCC411947A5E18 /* PBXContainerItemProxy */;
+		};
 		8BA706FD423EB76F44E5FD435BA0EF2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Fabric;
 			target = D35E9EC86D36A4C8BC1704199FDB3552 /* Fabric */;
 			targetProxy = 5867803FF3FC93B4E35AEC42A61D63DE /* PBXContainerItemProxy */;
 		};
+		9003C9B2CAA4878FB9586B062BDBE81C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fabric;
+			target = D35E9EC86D36A4C8BC1704199FDB3552 /* Fabric */;
+			targetProxy = 66E6B901FBD8448BF8DC512F38B2E7A5 /* PBXContainerItemProxy */;
+		};
 		96253F3F1902109B50942ECB03F9709E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 73D907A2182514188BFA198DB79AA3CA /* MBProgressHUD */;
 			targetProxy = 5E994123DBB29532C0B5BA7CAE9EB2DF /* PBXContainerItemProxy */;
+		};
+		A9192F5E1C304C5691828520C820283C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
+			targetProxy = FC52BC6AF0858F38D9525A39AC9F2E92 /* PBXContainerItemProxy */;
+		};
+		AC3E7E94F0B01EA2C4F602A4FF660C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fabric;
+			target = D35E9EC86D36A4C8BC1704199FDB3552 /* Fabric */;
+			targetProxy = 185DEC1DD4B4CD6785F2D04DA2B21ED9 /* PBXContainerItemProxy */;
+		};
+		B642502500185706E0DB965AE0B1D255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 73D907A2182514188BFA198DB79AA3CA /* MBProgressHUD */;
+			targetProxy = 56C34FC18F6CC9AE222555AE3007EEBF /* PBXContainerItemProxy */;
+		};
+		BB46D89F0401F934FAE91B70B2E2DD29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVGKit;
+			target = 7022FE77DF3DEA8B5687543E6BB43819 /* SVGKit */;
+			targetProxy = 57A782E61190CBF7ECA2AF16BD1C6850 /* PBXContainerItemProxy */;
 		};
 		BBEBFB553A050EA0114301330B4CA17F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2395,6 +2599,24 @@
 			name = Crashlytics;
 			target = ABA9A411BB5A359862E5F1AA6238278E /* Crashlytics */;
 			targetProxy = F4F2B0FFD8E83F40598EA47F17D0FCA9 /* PBXContainerItemProxy */;
+		};
+		C1A0BBF49C73CF1AE49C20793D617F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = BAAB01D1BA82ABAE2B535579B77ED0CB /* Moya */;
+			targetProxy = 01072A8CC58D478B19C1D1BB5BCE13E5 /* PBXContainerItemProxy */;
+		};
+		C4C542FBE1500F137AA7E3A7C1869B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 4B0183450F95394DC0C49E326A20B42D /* Result */;
+			targetProxy = AAA6D1660C4907CABF58273FE62E649D /* PBXContainerItemProxy */;
+		};
+		C5B36D5780C14A47B44AD59D8487779C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 73D907A2182514188BFA198DB79AA3CA /* MBProgressHUD */;
+			targetProxy = 0859D349836AD0094865CF753F8100C0 /* PBXContainerItemProxy */;
 		};
 		C5BC96C7F7F87DBF05840ABA925A64F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2414,6 +2636,18 @@
 			target = D35E9EC86D36A4C8BC1704199FDB3552 /* Fabric */;
 			targetProxy = D465047540D12FD9D95291AE82A76DB9 /* PBXContainerItemProxy */;
 		};
+		D532C5B2555E9FBBA025DF010C69686D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Countries";
+			target = E30C2087E8E99285E7A2A0CF39B488AA /* Pods-Countries */;
+			targetProxy = 95333F2DB4522C28ACDA9C3DE27ACADA /* PBXContainerItemProxy */;
+		};
+		DB7A4D43880B36D6FDBA138238B9CF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = BAAB01D1BA82ABAE2B535579B77ED0CB /* Moya */;
+			targetProxy = D58684261B4CF49E547EB868D9EBDCC2 /* PBXContainerItemProxy */;
+		};
 		E88EF6EBC52E2364458D88C21074D8D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Result;
@@ -2423,6 +2657,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0BE2148F2A55A55354074A02E0B88BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8451BBA4F4D8781F8C023C88C0794CC /* Pods-CountriesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		10BF8542F56E7344948A78DDCECB379C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15DE2EF863F3EC1D8DA27C731036E77A /* CocoaLumberjack.xcconfig */;
@@ -2494,44 +2766,6 @@
 			};
 			name = Debug;
 		};
-		1CC42DC8BA25B99214F6D124B5B60DD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21DCFA37B85FDA8E46C69547A77CFBE /* Pods-CountriesTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2C8D387FA2A2FFCFB95B51A181AED470 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52F725314A010637A4DEE4FB9A5F55DB /* SVGKit.xcconfig */;
@@ -2596,7 +2830,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2738,45 +2972,6 @@
 			};
 			name = Debug;
 		};
-		73B6E24A51BAEDD2A284BB83DA9C5F0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BDA9B1BE6F1D25491949F606045532D /* Pods-CountriesUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		822C8B41917F520C96AB722AC11C532E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15DE2EF863F3EC1D8DA27C731036E77A /* CocoaLumberjack.xcconfig */;
@@ -2827,45 +3022,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		91D9DB7E0B40AFF5F2262EFE0667AECD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE34BD3F8301DC59403ADF691745148 /* Pods-CountriesTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		924D56B1D59CD3049300EAEEA256114E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2965,7 +3121,7 @@
 		};
 		A5B03EB65ADDB146E42CEE7852B9FFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97B7FE426BD83BB909F01BA4B98C7CA1 /* Pods-Countries.debug.xcconfig */;
+			baseConfigurationReference = 9D8FF950963F06E8FACF5F3DA2819AA1 /* Pods-Countries.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3037,44 +3193,6 @@
 			};
 			name = Release;
 		};
-		ADD3C8D5DC80DA69FA7C541344035493 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C125D6F1D3722A646EC6D47D44899823 /* Pods-CountriesUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B914025A518B53556696F19D8D477057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E784E65DD36BE25E1BC508603EF939B9 /* Alamofire.xcconfig */;
@@ -3138,7 +3256,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3179,6 +3297,44 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		D03A633A8A23609D271EE58080CF85E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A99A5F58C4FC5135836968B002C388 /* Pods-CountriesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D43B3DDF5D3BF6757ED79FD2D914D7C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3233,7 +3389,7 @@
 		};
 		DFE4FB2ADC3E37A57F18D4DC2375FAC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8EF16A489DC5C223D560A8DE6631D1F /* Pods-Countries.release.xcconfig */;
+			baseConfigurationReference = 2EC7415BC0EC5B228E532545AE9F2EDD /* Pods-Countries.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3256,6 +3412,84 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Countries/Pods-Countries.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F42C980C87DF824300F2C74546D43013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2488D7B7ED12FE3A78E8EF2D91CB36 /* Pods-CountriesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CountriesTests/Pods-CountriesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB25338C7F718B48C5E3788C588E1DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DE2DCC39E7B120497120C7AD7A888C /* Pods-CountriesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -3300,6 +3534,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		35669F9C600B645B7CA7CD1EB10D44EC /* Build configuration list for PBXNativeTarget "Pods-CountriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE2148F2A55A55354074A02E0B88BDB /* Debug */,
+				F42C980C87DF824300F2C74546D43013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B4F5091D38CE60A1C853515C0C5B49D /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3314,15 +3557,6 @@
 			buildConfigurations = (
 				4093433A309EFE160336AC736594AB22 /* Debug */,
 				924D56B1D59CD3049300EAEEA256114E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		66F443B090386BA262E6B0A06FDE7640 /* Build configuration list for PBXNativeTarget "Pods-CountriesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CC42DC8BA25B99214F6D124B5B60DD8 /* Debug */,
-				91D9DB7E0B40AFF5F2262EFE0667AECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3354,6 +3588,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B70AF48BDBB3CB803A607724C42014C9 /* Build configuration list for PBXNativeTarget "Pods-CountriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03A633A8A23609D271EE58080CF85E0 /* Debug */,
+				FB25338C7F718B48C5E3788C588E1DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B987638F9099098B9389DF186A2278A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3368,15 +3611,6 @@
 			buildConfigurations = (
 				B914025A518B53556696F19D8D477057 /* Debug */,
 				9CF36E6AA46D597086D835E1724A4D87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8BC9910B0A43C82E9D0C52B2A293FC6 /* Build configuration list for PBXNativeTarget "Pods-CountriesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADD3C8D5DC80DA69FA7C541344035493 /* Debug */,
-				73B6E24A51BAEDD2A284BB83DA9C5F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

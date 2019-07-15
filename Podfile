@@ -6,7 +6,7 @@ target 'Countries' do
   use_frameworks!
 
   # Pods for Countries
-	pod 'Moya', '~> 13.0'
+    pod 'Moya', '~> 13.0'
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'SVGKit'
     pod 'Fabric'
@@ -15,11 +15,21 @@ target 'Countries' do
   target 'CountriesTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Moya', '~> 13.0'
+    pod 'MBProgressHUD', '~> 1.1.0'
+    pod 'SVGKit'
+    pod 'Fabric'
+    pod 'Crashlytics'
   end
 
   target 'CountriesUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Moya', '~> 13.0'
+    pod 'MBProgressHUD', '~> 1.1.0'
+    pod 'SVGKit'
+    pod 'Fabric'
+    pod 'Crashlytics'
   end
 
 end
