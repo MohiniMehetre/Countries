@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("First push using Jenkins")
         print("Second push using Jenkins")
         print("Third push using Jenkins")
+        print("Check remote commit")
         return true
     }
 
